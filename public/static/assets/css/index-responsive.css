@@ -1,0 +1,1107 @@
+@media(max-width: 1199px) {
+
+    footer .about {
+        padding: 0 15px;
+    }
+
+    span.banner-line {
+        height: 2px;
+        width: 20px;
+        background: #49454F;
+        display: inline-block;
+        vertical-align: middle;
+        position: relative;
+        top: 0px;
+    }
+
+    section.faq-sec .accordion .card .card-header button.btn.btn-link {
+        padding-right: 50px;
+    }
+
+    footer .imp-links,
+
+    footer .featuers {
+        padding-left: 15px;
+    }
+
+    footer ul.social-links li {
+        padding: 0 15px;
+    }
+
+    section.apartmt-offers .inner-content figure {
+        text-align: center;
+    }
+
+    section.apartmt-offers .inner-content figure img,
+    section.apartmt-offers .inner-content figure img {
+        position: relative;
+        z-index: 9;
+        width: 100%;
+        max-width: 70%;
+    }
+
+    section.apartmt-offers .inner-content figure::after {
+
+
+        top: -19px;
+        height: 100%;
+        left: -82px;
+
+        background-size: 95%;
+    }
+
+    section.apartmt-invest .inner-content figure::after {
+
+        top: 39px;
+        height: 100%;
+        left: 0;
+
+
+        background-size: 70%;
+    }
+
+    section.apartmt-offers {
+        overflow: hidden;
+    }
+
+    .mobile-bg .inner-content {
+
+        background-repeat: no-repeat;
+        height: 100%;
+        z-index: 1;
+        /* width: 100%; */
+        background-position: 60% center;
+        /* max-width: 80%; */
+        background-size: 134%;
+    }
+
+    .mobile-bg-invest .inner-content {
+
+        background-repeat: no-repeat;
+        height: 100%;
+        background-position: 60% center;
+        background-size: 100%;
+    }
+
+    section.guide-apartmt::after {
+
+        right: 2px;
+
+    }
+
+    section.apartmt-offers .left-content {
+        width: 15%;
+
+    }
+
+    section.apartmt-offers .right-content {
+        width: 85%;
+        padding-right: 15px;
+    }
+
+    footer .form-group.button input,
+    footer .form-group.button input::placeholder {
+        font-size: 8px !important;
+
+    }
+}
+
+@media (max-width: 991px) {
+    #navbarSupportedContent {
+        position: fixed;
+        right: -5px;
+        height: 100vh !important;
+        z-index: 999999;
+        width: 40vw !important;
+        background: white;
+        top: 0;
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.25);
+        padding-right: 15px;
+        transform: translateX(100%);
+        height: 100vh;
+        overflow-y: auto;
+        transition: all 0.3s ease;
+        align-items: flex-start;
+    }
+
+    #navbarSupportedContent.show {
+        transform: translateX(0);
+    }
+
+    section.search-apartmt p.apart-head-2,
+    section.search-apartmt span.apart-cont-2 {
+        display: block;
+    }
+
+    section.search-apartmt p.apart-head,
+    section.search-apartmt span.apart-cont {
+        display: none;
+    }
+
+    section.apartmt-offers .inner-content figure::after {
+
+
+
+        top: 50px;
+
+        left: 107px;
+
+        right: 0;
+
+        background-size: 74%;
+    }
+
+    form.submit-form .form-group.button {
+
+        height: 36px;
+        border-radius: 8px;
+    }
+
+    form.submit-form button.btn.btn-default {
+        background: #030D4F;
+        height: 37px;
+    }
+
+    section.apartmt-invest .inner-content figure::after {
+        top: 104px;
+        height: 100%;
+        left: 165px;
+        right: 0;
+        background-size: 56%;
+    }
+
+    #navbarSupportedContent .resp-menu {
+        width: 100%;
+        position: relative;
+        display: block !important;
+    }
+
+
+    .banner form.search-btn {
+        max-width: 70%;
+    }
+
+    section.search-apartmt .inner-content span {
+
+        margin-bottom: 20px;
+
+    }
+
+    section.search-apartmt .inner-content p {
+
+        margin-bottom: 30px;
+    }
+
+    .facty {
+        -webkit-box-flex: 0;
+        -ms-flex: 0 0 50%;
+        flex: 0 0 50%;
+        max-width: 50%;
+    }
+
+    section.guide-apartmt::after {
+
+        width: 6%;
+
+    }
+
+    div#myModal div#signup,
+    div#forgot,
+    div#otp-form {
+        z-index: 999999;
+    }
+
+
+
+    .submit-logo-sec a.navbar-brand-footer,
+    .submit-logo-sec form.submit-form {
+        display: block;
+    }
+
+    .submit-logo-sec {
+        max-width: 85%;
+
+    }
+
+    a.navbar-brand {
+        margin-right: auto;
+    }
+
+
+
+
+
+    div#navbarSupportedContent {
+        width: 100%;
+        flex: 0 0 100%;
+    }
+
+    .navbar-collapse {
+        height: 0 !important;
+    }
+
+
+
+
+
+
+
+    nav.navbar.navbar-expand-sm.navbar-light {
+        flex-wrap: wrap;
+    }
+
+    .navbar-expand-sm .navbar-toggler {
+        display: block;
+    }
+
+    .navbar-collapse.collapse.show {
+        display: block;
+    }
+
+    ul.navbar-nav {
+        display: none;
+    }
+
+
+
+    header button.navbar-toggler:focus,
+    header span.toggle img {
+        outline: none !important;
+        box-shadow: none !important;
+        border-color: none !important;
+    }
+
+    header button.navbar-toggler {
+        padding-right: 0;
+    }
+
+    ul.resp-menu p {
+
+        font-family: 'eina_03semibold';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 20px;
+        text-align: right;
+        padding: 10px 0;
+        text-transform: capitalize;
+    }
+
+    ul.resp-menu p:hover {
+        color: #CC952D;
+    }
+
+    ul.resp-menu li {
+        font-family: 'eina_03regular';
+        font-style: normal;
+        font-weight: normal;
+
+        /* identical to box height, or 143% */
+
+        text-align: right;
+        padding-right: 0;
+
+
+    }
+
+    ul.resp-menu li.nav-item.account {
+        font-family: 'eina_03semibold';
+    }
+
+    ul.resp-menu li.nav-item.account a {
+        padding: 0 !important;
+        font-size: 16px !important;
+        line-height: 20px !important;
+    }
+
+    header ul.resp-menu li a {
+        padding: 0 !important;
+        color: #000000 !important;
+        font-size: 14px !important;
+        line-height: 20px !important;
+        padding-right: 0;
+    }
+
+    header ul.navbar-nav {
+        display: none !important;
+    }
+
+    section.guide-apartmt .inner-content h2,
+    section.faq-sec .inner-content h2 {
+
+        font-size: 34px;
+
+    }
+
+    .mobile-bg .inner-content {
+
+        /* width: 100%; */
+        background-position: 47% center;
+        /* max-width: 80%; */
+        margin-top: 65px;
+        background-size: 80%;
+    }
+
+    section.apartmt-invest .inner-content {
+
+
+        background-position: 47% center;
+        /* max-width: 80%; */
+        margin-top: 65px;
+        background-size: 55%;
+    }
+
+    header ul.navbar-nav {
+        /*display: flex;*/
+        justify-content: flex-start;
+        align-items: flex-start;
+        /*margin-left: auto;*/
+    }
+
+    li.dropdown,
+    li.nav-item {
+        padding: 8px 20px 8px 0;
+        font-family: 'eina_03semibold';
+    }
+
+    li.dropdown a.dropdown-toggle {
+        padding-left: 0
+    }
+
+    section.apartmt-offers .inner-content figure img,
+    section.apartmt-offers.apartmt-invest .inner-content figure img {
+        position: relative;
+        z-index: 9;
+        width: 100%;
+        max-width: 36%;
+
+    }
+
+    section.apartmt-offers.apartmt-invest {
+        padding-bottom: 0 !important;
+    }
+
+    section.apartmt-offers.apartmt-invest .inner-content figure img {
+        margin-bottom: 0 !important;
+    }
+
+    .mobile-bg-invest {
+        order: 2;
+    }
+
+    section.submit-sec .outer-wrap {
+
+        max-width: 85%;
+
+    }
+
+    section.guide-apartmt .outer-wrap img {
+        width: 100%;
+    }
+
+    .contact-us-info {
+        display: none;
+    }
+
+    section.apartmt-offers::after {
+
+        right: 4px;
+
+    }
+}
+
+@media(max-width: 767px) {
+
+    footer .about {
+        order: 3;
+        margin-top: 70px;
+    }
+
+
+    form.submit-form .form-group input,
+    form.submit-form .form-group input::placeholder {
+        color: #7F7479;
+    }
+
+    section.faq-sec .acc-1 {
+        order: 1;
+    }
+
+    section.faq-sec .acc-2 {
+        order: 4;
+    }
+section.guide-apartmt .guide-ctry .col-lg-3
+    {
+padding: 0 7.5px}
+    section.faq-sec .acc-3 {
+        order: 2;
+    }
+
+    section.faq-sec .acc-4 {
+        order: 5;
+    }
+
+    section.faq-sec .acc-5 {
+        order: 3;
+    }
+
+    section.faq-sec .acc-6 {
+        order: 6;
+    }
+
+    section.faq-sec .acc-7 {
+        order: 7;
+    }
+
+    footer h4.footer-heading {
+        margin-top: 20px;
+    }
+
+    section.apartmt-offers::after,
+    section.apartmt-invest::before,
+    section.guide-apartmt::after,
+    section.apartmt-invest .inner-detial p::after,
+    .mobile-bg-invest,
+    .left-side-content,
+    .mobile-bg,
+    section.faq-sec::after {
+        display: none;
+    }
+
+    .guide-btn a.cst-btn {
+        margin-left: unset;
+    }
+
+    section.faq-sec .accordion .card .card-header button.btn.btn-link {
+        background: #FFFFFF url(../images/plus-resp.svg) no-repeat 98% center/12px 12px;
+
+    }
+
+
+    section.faq-sec .accordion .card .card-header button.btn.btn-link[aria-expanded="true"] {
+        background: url(../images/minus-resp.svg) no-repeat 98% center/12px 12px;
+
+
+    }
+
+
+    section.apartmt-offers .upper-content {
+        display: block;
+
+    }
+
+    section.apartmt-offers .upper-content p {
+        font-family: Playfair Display;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 25px;
+        line-height: 33px;
+        text-align: center;
+        text-indent: 1px;
+
+        margin: 10px 0 25px;
+    }
+
+    span.cost {
+        font-family: 'eina_03semibold';
+    }
+
+    .guide-btn {
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    div#myModal .modal-header h1,
+    #signup .modal-header h1,
+    #forgot .modal-header h1,
+    div#otp-form .modal-header h1 {
+
+        font-size: 26px;
+        line-height: 32px;
+
+    }
+
+    .form-group.name {
+        margin-bottom: 0;
+    }
+
+    .form-group.name input {
+        width: 100%;
+    }
+
+    div#myModal .modal-header p,
+    #signup .modal-header p,
+    #forgot .modal-header p,
+    div#otp-form .modal-header p {
+
+        font-size: 20px;
+        line-height: 32px;
+
+    }
+
+    .login-option ul li,
+    .signup-option ul li {
+
+        font-size: 12px;
+        line-height: 24px;
+
+    }
+
+    div#myModal .modal-header .inner-content,
+    div#signup .modal-header .inner-content,
+    #forgot .modal-header .inner-content,
+    div#otp-form .modal-header .inner-content {
+
+        max-width: 100%;
+
+    }
+
+    form.login-form .form-group input,
+    form.login-form .form-group input::placeholder,
+    form.signup-form .form-group input,
+    form.signup-form .form-group input::placeholder {
+        font-size: 14px;
+        line-height: 20px;
+        padding-top: 0;
+    }
+
+    .login-option p,
+    .signup-option p {
+
+        font-size: 12px;
+        line-height: 24px;
+
+    }
+
+    .signup-form .form-group.name input {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .signup-form .form-group.name input:last-child {
+        margin-left: 0;
+    }
+
+    form.login-form.otp-form .form-group input {
+
+        width: 28px;
+        margin-right: 13px;
+        padding: .375rem 0 6px .375rem;
+        box-shadow: none;
+
+
+    }
+
+    div#otp-form .inner-content p.otp-msg {
+
+        font-size: 17px;
+
+    }
+
+    div#myModal .modal-dialog,
+    #signup .modal-dialog,
+    #forgot .modal-dialog,
+    div#otp-form .modal-dialog {
+
+        margin: 15px auto;
+        width: 295px;
+    }
+
+    div#myModal .modal-body .login-form,
+    #signup .modal-body .signup-form,
+    #forgot .modal-body .login-form,
+    div#otp-form .modal-body .login-form {
+
+        max-width: 90%;
+
+    }
+
+    form.login-form .form-group input,
+    .signup-form .form-group input {
+        height: 30px;
+        line-height: 1;
+    }
+
+    form.login-form button.btn.btn-primary,
+    .signup-form button.btn.btn-primary,
+    form.login-form .form-group input,
+    .signup-form .form-group input,
+    form.login-form .form-group input::placeholder,
+    .signup-form .form-group input::placeholder {
+
+        font-size: 14px;
+    }
+
+    form.login-form button.btn.btn-primary,
+    .signup-form button.btn.btn-primary {
+
+        margin-top: 5px;
+
+    }
+
+    .login-option ul,
+    .signup-option ul {
+
+        margin: 10px 0;
+    }
+
+    /*p {
+    color: #000;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 400;
+    letter-spacing: 0.2px;
+    font-family: Playfair Display;
+}*/
+    .banner form.search-btn {
+        max-width: 90%;
+    }
+
+    section.apartmt-offers.apartmt-invest h2 {
+        margin-bottom: 0;
+    }
+
+
+    section.apartmt-offers .outer-wrap {
+        display: flex;
+        border-bottom: 0;
+        background: transparent;
+        box-shadow: none;
+
+        padding: 0;
+        margin: 0 0 45px 0;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    section.apartmt-offers .right-content {
+        width: 90%;
+        padding-right: 0px;
+    }
+
+
+    section.apartmt-offers.apartmt-invest .outer-wrap {
+        margin: 40px 0 !important;
+    }
+
+    section.apartmt-offers .inner-detial p {
+        text-align: center;
+        font-size: 15px;
+        line-height: 25px;
+        margin-bottom: 0;
+    }
+
+    section.apartmt-offers .inner-detial span {
+        font-size: 15px;
+        line-height: 25px;
+
+        display: block;
+        text-align: center;
+    }
+
+    section.apartmt-offers .inner-detial span.banner-line.rent-line {
+        display: inline-block !important;
+    }
+
+    section.apartmt-offers .inner-detial p.count {
+        font-size: 30px;
+        line-height: 48px;
+        text-align: center;
+        color: #4476DF;
+        margin-bottom: 0;
+
+    }
+    
+    section.search-apartmt {
+        padding: 0;
+    }
+
+    
+
+    section.apartmt-offers.apartmt-invest .row {
+        margin: 0 !important;
+    }
+
+    section.apartmt-invest .inner-content {
+        margin-top: 0;
+    }
+
+    section.apartmt-offers a.learn-more {
+        text-align: center;
+        color: #4476df;
+        margin-bottom: 25px;
+    }
+
+    section.submit-sec .inner-content {
+        display: none;
+    }
+
+    section.submit-sec .outer-wrap {
+
+        display: none;
+    }
+
+    section.submit-sec {
+        padding: 0 0 40px;
+    }
+
+    section.submit-sec p.submit-reminder {
+        font-size: 25px;
+        line-height: 33px;
+        text-align: center;
+        padding: 50px 0;
+        color: #282828;
+        font-family: Playfair Display;
+    }
+
+
+
+
+
+
+
+
+    section.apartmt-invest .inner-detial span {
+        padding-top: 0;
+    }
+
+    section.search-apartmt .inner-content {
+        height: unset;
+    }
+
+
+    section.search-apartmt .inner-content p {
+
+        margin-top: 30px;
+        margin-bottom: 10px;
+    }
+
+    section.search-apartmt .inner-content span {
+
+        margin-bottom: 35px;
+    }
+
+    form.search-btn {
+        max-width: 75%;
+        margin-bottom: 45px;
+    }
+
+    section.apartmt-offers .inner-content p.main-heading,
+    section.faq-sec .inner-content p.main-heading {
+
+
+        text-align: center;
+
+    }
+
+    section.guide-apartmt .inner-content p.main-heading,
+    section.guide-apartmt .inner-content h2 {
+
+        text-align: center;
+    }
+
+
+
+    section.apartmt-offers .inner-content p.main-heading::after,
+    section.guide-apartmt .inner-content p.main-heading::after,
+    section.faq-sec .inner-content p.main-heading::after {
+        position: absolute;
+
+        width: 122px;
+        background-color: #4476DF;
+
+        left: 50%;
+        transform: translate(-50%);
+    }
+
+    section.guide-apartmt .inner-content p.main-heading::after {
+        background-color: #030D4F !important;
+    }
+
+    section.faq-sec .inner-content p.main-heading::after {
+        background-color: #CC952D !important;
+    }
+
+    section.apartmt-offers .inner-content h2,
+    section.guide-apartmt .inner-content h2,
+    section.faq-sec .inner-content h2 {
+        text-align: center;
+        font-size: 28px;
+    }
+
+    section.apartmt-offers.apartmt-invest .inner-content p.main-heading::after {
+        position: absolute;
+
+        width: 122px;
+        background-color: #CC952D;
+
+        left: 50%;
+        transform: translate(-50%);
+    }
+
+
+    section.guide-apartmt,
+    section.faq-sec {
+        padding: 40px 0;
+
+    }
+
+
+    span.banner-line {
+        height: 2px;
+        width: 15px;
+
+
+
+        margin: 0 1px;
+    }
+}
+
+@media(max-width: 480px) {
+
+    header {
+        background: #fcf9f4;
+    }
+
+    header a.navbar-brand {
+        padding-left: 35px;
+        padding-top: 20px;
+    }
+
+    span.cost {
+        font-family: 'eina_03semibold';
+    }
+
+    section.apartmt-offers .inner-content p.main-heading,
+    section.faq-sec .inner-content p.main-heading {
+
+        font-size: 26px;
+        line-height: 36px;
+        text-align: center;
+
+    }
+
+    section.guide-apartmt .inner-content p.main-heading {
+        font-size: 22px;
+        line-height: 30px;
+        text-align: center;
+    }
+
+
+
+
+    section.apartmt-offers .inner-content h2,
+    section.guide-apartmt .inner-content h2,
+    section.faq-sec .inner-content h2 {
+        font-size: 30px;
+        line-height: 40px;
+        text-align: center;
+        margin-bottom: 30px;
+    }
+
+
+
+
+
+
+
+
+    .submit-logo-sec {
+        max-width: 100%;
+
+
+    }
+
+    section.submit-sec p.submit-reminder {
+        margin-right: 0;
+    }
+
+    section.submit-sec p.submit-reminder {
+        padding: 0 30px;
+        margin-top: 35px;
+
+    }
+
+    .submit-logo-sec form.submit-form {
+        width: 100%;
+        max-width: 90%;
+        margin: 0 auto;
+    }
+
+    .submit-logo-sec form.submit-form input,
+    .submit-logo-sec form.submit-form input::placeholder {
+        font-size: 11px;
+        line-height: 24px;
+        -moz-appearance: none;
+        -webkit-appearance: none;
+        box-shadow: none;
+
+    }
+
+
+
+
+
+
+
+
+
+    section.search-apartmt .inner-content p {
+
+        font-size: 25px;
+        line-height: 33px;
+        margin-top: 30px;
+        margin-bottom: 25px;
+
+    }
+
+    form.search-btn {
+        max-width: 90%;
+        margin-bottom: 45px;
+    }
+
+    section.search-apartmt .inner-content span {
+        font-size: 18px;
+        line-height: 24px;
+        margin-bottom: 20px;
+    }
+
+
+
+    section.guide-apartmt .inner-wrap p,
+    section.guide-apartmt .inner-wrap-hover p {
+
+        font-size: 15px;
+        line-height: 15px;
+        padding-top: 5px;
+
+    }
+
+    section.guide-apartmt .inner-wrap-hover span,
+    section.guide-apartmt .inner-wrap span {
+        font-size: 12px;
+        line-height: 25px;
+        padding-bottom: 0;
+    }
+
+    section.guide-apartmt .outer-wrap img {
+        width: 100%;
+        height: 175px;
+    }
+
+    footer {
+        padding: 80px 0 190px;
+
+    }
+
+    footer .imp-links .inner-content {
+        padding-left: 30px;
+    }
+
+    footer .imp-links .inner-content {
+        padding-left: 30px;
+    }
+
+    footer .featuers {
+        padding-left: 50px;
+    }
+
+    footer .about .inner-content {
+        padding: 0 30px;
+    }
+
+    footer .about .inner-content a.navbar-brand-footer {
+        display: block;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    ul.social-links {
+
+        justify-content: center;
+    }
+
+    .banner form.search-btn {
+        max-width: 93%;
+    }
+
+    header a.navbar-brand {
+        width: 75%;
+        text-align: center;
+    }
+
+    header a.navbar-brand img {
+        width: 173px;
+        height: 33px;
+    }
+
+
+
+
+
+    .resp-menu {
+        width: 50vw;
+    }
+
+    section.faq-sec .accordion .card .card-header button.btn.btn-link {
+        padding-right: 55px;
+    }
+
+    section.faq-sec button.btn.btn-link {
+
+        font-size: 12px;
+        line-height: 17px;
+
+    }
+
+    section.faq-sec .card-header {
+
+        min-height: 59px;
+
+    }
+
+section.guide-apartmt .guide-ctry .col-lg-3:nth-child(odd) {
+        padding-left: 30px;
+        padding-right:10px;
+    }
+     section.guide-apartmt .guide-ctry .col-lg-3:nth-child(even) {
+        padding-right: 30px;
+         padding-left: 10px;
+    }
+
+
+}
+
+@media(max-width: 360px) {
+    section.apartmt-offers .inner-detial p {
+
+        font-size: 16px;
+
+    }
+
+
+    footer .inner-content h4 {
+        margin-top: 20px;
+    }
+
+    section.apartmt-offers .inner-content p.main-heading,
+    section.faq-sec .inner-content p.main-heading {
+        font-size: 25px;
+        line-height: 36px;
+        text-align: center;
+    }
+
+    span.cost {
+        font-family: 'eina_03semibold';
+    }
+
+    span.banner-line {
+        height: 1px;
+        width: 10px;
+        top: -2px;
+        margin: 0 1px;
+    }
+}

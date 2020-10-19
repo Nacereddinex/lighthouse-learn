@@ -1,0 +1,145 @@
+
+.heading {
+    font-family: 'Playfair Display', serif;
+    font-weight: 600;
+}
+.building-city-text {
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 30px;
+}
+.building-price-text {
+    font-family: 'Playfair Display', serif;
+    font-size: 35px;
+    line-height: 35px;
+}
+.building-reward-text {
+    font-family: 'EINA 03 SemiBold', serif;
+    font-size: 30px;
+    color: #CC952D;
+    line-height: 35px;
+}
+.building-period-text {
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 22px;
+}
+
+.building-period-hint-text {
+    font-size: 12px;
+    line-height: 22px;
+}
+
+.direct-hyperlink-text {
+    font-size: 14px;
+}
+.description-text {
+    font-size: 14px;
+    line-height: 22px;
+}
+.unit-description-title {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 22px;
+}
+
+.unit-description-body {
+    font-size: 14px;
+    line-height: 22px;
+}
+
+.unit-card-name {
+    font-size: 12px;
+    line-height: 22px;
+}
+
+.unit-card-title {
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 22px;
+}
+
+.btn-primary {
+    font-size: 13px;
+    letter-spacing: 1px;
+    line-height: 15px;
+    border-radius: 40px;
+    transition: all 0.3s ease 0s;
+}
+
+.icon {
+    background-image: url("/static/assets/Icons/dollar_circle_candle.png");
+    background-size: 25px 25px;
+    width: 25px;
+    height: 25px;
+    display: inline-flex;
+}
+.icon.new{
+    background: url(/static/assets/Icons/dollar_circle_candle.png) center center no-repeat;
+    background-size: 100%;
+    width: 16px;
+    height: 16px;
+    display: inline-flex;
+    top: 2px;
+    position: relative;
+}
+
+.icon_location {
+    background-image: url("/static/assets/Icons/black_location.png");
+    background-size: 12px 18px;
+    width: 12px;
+    height: 18px;
+    display: inline-flex;
+}
+
+.icon_bed {
+    background-image: url("/static/assets/Icons/black_bed.png");
+    background-size: 16px 14px;
+    width: 16px;
+    height: 14px;
+    display: inline-flex;
+}
+.icon_bed.new{
+    background: url(/static/assets/Icons/black_bed.png) center center no-repeat;
+    background-size: 100%;
+    width: 16px;
+    height: 16px;
+    display: inline-flex;
+    top: 2px;
+    position: relative;
+}
+
+.icon_dog {
+    background-image: url("/static/assets/Icons/black_dog.png");
+    background-size: 18px 18px;
+    width: 18px;
+    height: 18px;
+    display: inline-flex;
+}
+
+.imgMap {
+    background-image: url('/static/assets/images/map.png');
+    height: 281px;
+    width: 491px;
+}
+
+.imgCircleFace {
+    background-image: url('/static/assets/images/face_circle.png');
+    height: 64px;
+    width: 64px;
+}
+
+.imgApartmentLg {
+    background-image: url('/static/assets/images/apatment_inside.png');
+    height: 543px;
+    width: 724px;
+}
+
+.imgApartmentSm {
+    background-image: url('/static/assets/images/apatment_inside.png');
+    height: 270px;
+    width: 360px;
+}
+.grid-item{
+    cursor: pointer;
+}

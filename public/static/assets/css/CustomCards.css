@@ -1,0 +1,1321 @@
+/** Matt's new marker icons **/
+.infoPill .marker-100 {
+  background: #0d7735;
+  border: 2px solid #ffffff;
+  box-sizing: border-box;
+  box-shadow: 0px 0px 1px rgba(0, 0, 0, 0.5),
+    inset 0px 0px 8px rgba(0, 0, 0, 0.8);
+  width: 14px;
+  height: 14px;
+  display: inline-block;
+  border-radius: 50%;
+  position: relative;
+  top: 0px;
+  left: 8px;
+}
+.infoPill .marker-50 {
+  position: relative;
+  top: 0px;
+  left: 8px;
+  display: inline-block;
+  width: 14px;
+  height: 14px;
+  background: #b5d7a4;
+  border: 2px solid #ffffff;
+  box-sizing: border-box;
+  box-shadow: 0px 0px 1px rgba(0, 0, 0, 0.5), inset 0px 0px 6px #0d7735;
+  border-radius: 50%;
+}
+.infoPill .marker-50-100 {
+  position: relative;
+  top: 0px;
+  left: 8px;
+  display: inline-block;
+  width: 14px;
+  height: 14px;
+  background: #49c466;
+  border: 2px solid #ffffff;
+  box-sizing: border-box;
+  box-shadow: 0px 0px 1px rgba(0, 0, 0, 0.5), inset 0px 0px 8px #004018;
+  border-radius: 50%;
+}
+
+/** Alan's new cards **/
+
+/** other layout **/
+.map {
+  background: #282828;
+  width: 100%;
+  /* height: 100vh; */
+  display: block;
+}
+.rect-card {
+  width: 400px;
+  max-width: 500px;
+  height: 275px;
+  border-radius: 8px;
+  margin-bottom: 2px;
+  display: inline-block;
+  margin-left: 10px;
+}
+.rect-card .detailBox {
+  background: #faf4ea;
+  box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.12);
+  border-radius: 0px 0px 8px 8px;
+  height: 79px;
+  position: relative;
+  overflow: hidden;
+  padding-bottom: 15px;
+}
+.rect-card .detailBox a,
+.rect-card .detailBox a:hover,
+.rect-card .detailBox a:focus,
+.rect-card .detailBox a:visited {
+  text-decoration: none;
+  color: unset;
+  padding: unset;
+  font-size: unset;
+  line-height: unset;
+  margin: unset;
+  width: unset;
+  height: unset;
+  display: unset;
+  font-family: unset;
+  font-size: unset;
+  outline: 0px none;
+  border: 0px none;
+}
+.rect-card .detailBox .footerBar {
+  padding-left: 8px;
+  padding-top: 3px;
+  display: inline-flex;
+  width: 100%;
+  position: relative;
+}
+.rect-card .detailBox .footerBar .featureList {
+  position: absolute;
+  right: 10px;
+  bottom: -10px;
+}
+.rect-card .detailBox .footerBar .featureList ul {
+  padding-left: 0px;
+  list-style: none;
+  display: inline-flex;
+}
+.rect-card .detailBox .footerBar .featureList ul li {
+  width: 12px;
+  height: 12px;
+  display: flex;
+}
+.rect-card .detailBox .footerBar span.type {
+  float: left;
+  width: 43px;
+  height: 11px;
+  font-family: 'Eina 03';
+  font-style: normal;
+  font-weight: normal;
+  font-size: 8px;
+  line-height: 11px;
+  display: flex;
+  align-items: flex-end;
+  color: #000;
+}
+.rect-card .detailBox .infoBar {
+  display: flex;
+  padding-left: 8px;
+  padding-top: 0px;
+  margin-top: 0px;
+}
+.rect-card .detailBox .infoBar span.address {
+  font-family: 'Eina 03';
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 17px;
+  display: inline-block;
+  align-items: center;
+  color: #49454f;
+  white-space: nowrap;
+  width: 45%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.rect-card span.sub-name {
+  font-size: 0.85vw;
+  color: #49454f;
+  font-family: 'Eina 03';
+  font-style: normal;
+  font-weight: normal;
+}
+.rect-card .detailBox .infoBar span.name {
+  font-family: 'Eina 03';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 17px;
+  display: inline-block;
+  align-items: center;
+  color: #49454f;
+  padding-right: 8px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  width: 90%;
+  padding-top: 10px;
+  text-transform: uppercase;
+}
+.rect-card .detailBox .bedBar ul {
+  list-style: none;
+  padding: 0px;
+  display: inline-block;
+  padding-left: 8px;
+  padding-bottom: 4px;
+  margin-bottom: 0px;
+}
+.rect-card .detailBox .bedBar ul li {
+  display: inline-flex;
+  padding-right: 12px;
+}
+.rect-card .detailBox .bedBar ul li span.name {
+  font-family: 'Eina 03';
+  font-style: normal;
+  font-weight: normal;
+  font-size: 8px;
+  line-height: 12px;
+  /* display: flex; */
+  /* align-items: center; */
+  color: #49454f;
+  /* width: 23px; */
+  height: 11px;
+}
+.rect-card .detailBox .bedBar ul li span.price {
+  font-family: 'Eina 03';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 17px;
+  display: flex;
+  align-items: center;
+  color: #49454f;
+  height: 11px;
+  margin-right: 3px;
+}
+.rect-card .detailBox .bedBar ul li:last-child {
+  padding-right: 0px;
+}
+.rect-card .detailBox .bedBar ul li:first-child {
+  display: inline-flex;
+  padding-right: 12px;
+}
+.rect-card .detailBox .bedBar ul li:first-child span.name {
+  font-family: 'Eina 03';
+  font-style: normal;
+  font-weight: normal;
+  font-size: 8px;
+  line-height: 0px;
+  display: flex;
+  align-items: flex-end;
+  color: #49454f;
+}
+.iconC {
+  padding: 0px !important;
+}
+.bedBar {
+  white-space: nowrap;
+  width: 80%;
+  display: block;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+.Map_DragSearcher .innerDrag p {
+  cursor: pointer;
+}
+.Map_DragSearcher .innerDrag p:hover {
+  background: rgb(247, 247, 247);
+}
+.rect-card .detailBox .bedBar ul li:first-child span.price {
+  font-family: 'Eina 03';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 22px;
+  display: flex;
+  align-items: flex-end;
+  color: #49454f;
+  height: 22px;
+  margin-right: 3px;
+}
+.rect-card .detailBox:before {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background: #030d4f;
+  height: 8px;
+  width: 100%;
+}
+.rect-card .slider {
+  border-radius: 8px 8px 0px 0px;
+  width: 100%;
+  height: 202px;
+  overflow: hidden;
+  position: relative;
+}
+.rect-card .slider .tag {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 35px;
+  width: 150px;
+  border-radius: 8px 0px 9px 0px;
+  background: rgba(3, 13, 79, 0.75);
+  padding-left: 8px;
+  padding-top: 8px;
+  display: flex;
+}
+.price .marker {
+  top: 0px !important;
+  margin-right: 5px;
+}
+.rect-card .slider .tag span.info {
+  width: 87px;
+  height: 18px;
+  font-family: 'Eina 03';
+  font-style: normal;
+  /* font-weight: 600; */
+  font-size: 12px;
+  line-height: 17px;
+  display: flex;
+  align-items: center;
+  letter-spacing: 0.03em;
+  color: #fff;
+  white-space: nowrap;
+}
+.rect-card .slider .tag span.price {
+  font-family: 'Eina 03';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 17px;
+  display: flex;
+  align-items: center;
+  letter-spacing: 0.03em;
+  color: #fff;
+  height: 18px;
+  margin-right: 3px;
+}
+.rect-card .slider .slides {
+  width: 100%;
+  height: 100%;
+}
+.rect-card .slider .slide {
+  width: 100%;
+  height: 100%;
+  /* background: url("/static/assets/images/card-loader.gif") center center no-repeat; */
+  background-size: cover;
+}
+.listCol button {
+  display: none;
+}
+.mapCol .listCol {
+  padding: 0px !important;
+}
+
+@media only screen and (max-width: 620px) {
+  .mapCol {
+    display: none;
+  }
+  .listCol,
+  .mapCol {
+    width: 100% !important;
+    max-width: 100% !important;
+    flex: 100%;
+    padding: 6px;
+    padding-left: 20px !important;
+    padding-right: 20px !important;
+  }
+  .listCol button,
+  .mapCol button {
+    float: right;
+    display: block;
+    margin-right: 20px !important;
+    margin-bottom: 20px;
+  }
+  .cardContainer {
+    padding-top: 8px;
+    padding-right: 15px;
+    padding-left: 5px;
+    display: inline-block;
+    width: 100%;
+  }
+  .rect-card {
+    width: 100%;
+    display: block;
+    margin-right: 6px;
+  }
+}
+@media only screen and (max-width: 1420px) {
+  /* .mapCol{
+      display: none;
+    } */
+  /* .cardContainer {
+      padding-top: 8px;
+      padding-right: 15px;
+      padding-left: 5px;
+    } */
+  /* .listCol {
+      width: 100% !important;
+      max-width: 100% !important;
+      flex: 100%;
+      padding: 6px;
+      padding-left: 20px !important;
+      padding-right: 20px !important;
+    } */
+  .rect-card {
+    width: 100%;
+    /* height: 235px; */
+    margin-bottom: 8px;
+  }
+  /* .rect-card .slider {
+      height: 158px;
+    }
+    .rect-card .detailBox {
+      height: 79px;
+    } */
+}
+@media only screen and (min-width: 1420px) {
+  .mapCol {
+    /* display: none; */
+  }
+  .listCol button {
+    float: right;
+    margin-right: 20px !important;
+    margin-bottom: 20px;
+    display: block;
+  }
+  .cardContainer {
+    padding-top: 8px;
+    padding-right: 15px;
+    padding-left: 5px;
+    display: flex;
+    width: 100%;
+  }
+  .rect-card {
+    width: 48%;
+    display: inline-block;
+    margin-right: 6px;
+  }
+}
+/* @media only screen and (max-width: 4400px) {
+    .cardContainer {
+      padding-right: 15px;
+      padding-left: 5px;
+      padding-top: 8px;
+      display: flex;
+      width: 100%;
+    }
+    .rect-card {
+      width: 50% !important;
+      min-height: 261.63px !important;
+      height:auto;
+      display: inline-block;
+      margin-right: 6px;
+    }
+    .rect-card .slider {
+      height: 175.91px;
+    }
+    .rect-card .detailBox {
+      min-height:95px;
+      height: auto;
+    }
+  } */
+/** css-in-js edits **/
+.filters .mobile > div {
+  padding-left: unset !important;
+  display: flex !important;
+  overflow-y: unset !important;
+  overflow-x: unset !important;
+  white-space: unset !important;
+  position: unset !important;
+  width: unset !important;
+  z-index: unset !important;
+  right: unset !important;
+  left: unset !important;
+}
+.btn.btn-light.search-btn {
+  border-radius: 5px !important;
+  border-top-left-radius: 0px !important;
+  border-bottom-left-radius: 0px !important;
+}
+.unitContainer .filters {
+  padding-top: 0px !important;
+  margin-bottom: 0px !important;
+}
+
+.sc-EHOje.cLxRkg.rangePrice {
+  z-index: 999999;
+  position: absolute;
+  background: white;
+  width: 300px;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0px 15px 10px rgba(0, 0, 0, 0.2);
+  top: 55px;
+}
+.dropdown:not(.nav-item) {
+  padding-bottom: 0px !important;
+  width: 90px !important;
+  height: 60px !important;
+  padding-right: 0px !important;
+  margin-right: 0px !important;
+  min-width: 10px !important;
+}
+.sc-bFADNz.fxrKcU.dropdown {
+  margin-right: 10px !important;
+}
+.sc-bdVaJa.cnMenq.dropdown {
+  margin-right: 10px !important;
+}
+.dropdown__toggle {
+  padding: 0px !important;
+  width: 90px;
+  height: 40px;
+  background: #ffffff !important;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.25);
+  border-radius: 10px !important;
+  padding-top: 10px !important;
+  margin-top: 8px !important;
+  margin-bottom: 8px !important;
+  margin-bottom: 8px !important;
+  padding-right: 0px !important;
+  margin-right: 0px !important;
+  border-right-width: 0px !important;
+  display: inline-block !important;
+  text-align: center;
+}
+.dropdown__toggle span {
+  font-family: 'EINA 03' !important;
+  font-weight: 400 !important;
+  font-size: 13px !important;
+  display: inline-block !important;
+  text-align: center;
+  color: #49454f;
+}
+.dropdown__toggle img {
+  display: none;
+}
+
+/** filters **/
+.css-1r4vtzz {
+  padding: 8px 8px 5px 8px;
+  background-color: #fff;
+  border-radius: 2px;
+  border-width: 0;
+  box-shadow: 0 1px 1px 1px rgba(0, 0, 0, 0.08);
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.36;
+  -webkit-align-items: baseline;
+  -webkit-box-align: baseline;
+  -ms-flex-align: baseline;
+  align-items: baseline;
+  background: #fff;
+  box-sizing: border-box;
+  border-color: hsl(0, 0%, 80%);
+  color: #515151;
+  cursor: pointer;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  margin: 0;
+  max-width: 100%;
+  -webkit-flex-wrap: nowrap;
+  -ms-flex-wrap: nowrap;
+  flex-wrap: nowrap;
+  outline: currentcolor none medium !important;
+  text-align: left;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  -webkit-transition: background 0.1s ease-out 0s,
+    box-shadow 0.15s cubic-bezier(0.47, 0.03, 0.49, 1.38) 0s;
+  transition: background 0.1s ease-out 0s,
+    box-shadow 0.15s cubic-bezier(0.47, 0.03, 0.49, 1.38) 0s;
+  vertical-align: middle;
+  white-space: nowrap;
+  width: auto;
+}
+.css-1v99tuv {
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-align-self: center;
+  -ms-flex-item-align: center;
+  align-self: center;
+  -webkit-flex: 1 1 auto;
+  -ms-flex: 1 1 auto;
+  flex: 1 1 auto;
+  margin: 0;
+  max-width: 100%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.css-1gpjby2 {
+  -webkit-align-self: center;
+  -ms-flex-item-align: center;
+  align-self: center;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  line-height: 0;
+  font-size: 0;
+  margin: 0px 4px;
+}
+
+.responsiveCardSlider {
+  /* overflow: hidden; */
+}
+.CustomCard:hover {
+  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
+  transition: all 200ms;
+}
+
+.CustomCard {
+  transition: all 200ms;
+  width: 340px !important;
+  height: 500px !important;
+  background: #fff;
+  display: block;
+  border: 1px solid #ebebeb;
+  box-sizing: border-box;
+  border-radius: 4px;
+  border-bottom: 3px solid #cc952d;
+  margin: 5px;
+  float: left;
+  /* overflow:  hidden; */
+}
+.CustomCard:focus,
+.CustomCard *:focus {
+  outline: 0px none !important;
+}
+.CustomCard a {
+  text-decoration: none;
+  color: unset;
+  width: 100%;
+  height: 100%;
+}
+.CustomCard .cardBody {
+  margin-left: 15px;
+  margin-right: 15px;
+}
+.CustomCard .card-highlights {
+  padding-top: 15px;
+  text-transform: uppercase;
+  font-family: Eina04-Bold;
+}
+.CustomCard.wide .pager.cycle-pager-active {
+  background: transparent;
+  width: 14px;
+  height: 14px;
+  display: inline-block;
+  z-index: 400;
+  border-radius: 50%;
+  border: 5px solid rgba(255, 255, 255, 0.8);
+}
+.CustomCard.wide .controls,
+.rect-card .controls {
+  position: absolute;
+  z-index: 400;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+.CustomCard.wide #image-pager {
+  /* display: inline-block;
+    position: absolute;
+    bottom: 0;
+    left: 50px;
+    z-index: 400; */
+  bottom: 10px;
+  top: unset;
+}
+.CustomCard.wide .next,
+.rect-card .next {
+  background: url(/static/assets/images/slider-arrow-next.svg) center center
+    no-repeat;
+  background-size: 10px;
+  width: 16px;
+  height: 16px;
+  position: absolute;
+  right: 0;
+  z-index: 400;
+  top: 88px;
+  cursor: pointer;
+}
+.react-swipe-container.carousel,
+.react-swipe-container.carousel > div {
+  width: 100%;
+  height: 100%;
+}
+.CustomCard.wide .prev,
+.rect-card .prev {
+  background: url(/static/assets/images/slider-arrow-back.svg) center center
+    no-repeat;
+  background-size: 10px;
+  width: 16px;
+  height: 16px;
+  position: absolute;
+  left: 0;
+  z-index: 400;
+  top: 88px;
+  cursor: pointer;
+}
+.CustomCard.wide .pager,
+.rect-card .pager {
+  background: transparent;
+  width: 14px;
+  height: 14px;
+  display: inline-block;
+  z-index: 400;
+  border-radius: 50%;
+  border: 5px solid rgba(255, 255, 255, 0.5);
+}
+.CustomCard .card-highlights .highlight-list {
+  padding-top: 10px;
+}
+.CustomCard .card-highlights .highlight-list ul {
+  list-style: none;
+  margin: 0 auto;
+  padding: 0;
+}
+.Card-ImgSlider.cycle-slideshow {
+  height: 146px;
+  max-width: 146px;
+  min-width: 146px;
+  width: 146px;
+  position: relative;
+}
+.Card-ImgSlider.cycle-slideshow .backgroundImage {
+  position: absolute !important;
+  top: 0;
+  left: 0;
+}
+.CustomCard .card-highlights .highlight-list ul li.item {
+  margin-top: 10px;
+}
+.CustomCard .card-highlights .highlight-list ul li.item:not(:last-child) {
+  margin-right: 10px;
+}
+.CustomCard .card-highlights .highlight-list ul li.item {
+  float: left;
+  background: #ebebeb;
+  border-radius: 4px;
+  padding-left: 8px;
+  padding-right: 8px;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  color: #282828;
+  text-transform: lowercase;
+  opacity: 0.5;
+}
+.CustomCard .bedDetails:after {
+  content: '';
+  display: block;
+  border-bottom: 1px solid #ebebeb;
+  width: 100%;
+  margin: 0 auto;
+}
+.CustomCard .bedDetails {
+  padding-top: 35px;
+}
+.CustomCard .bedDetails ul.bed-list {
+  overflow: hidden;
+  list-style: none;
+  display: inline-flex;
+  padding: 0;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  width: 320px;
+  padding-top: 20px;
+}
+.CustomCard .bedDetails ul.bed-list .bed-item {
+  position: relative;
+  margin-right: 20px;
+  margin-left: 20px;
+  width: 100%;
+}
+.CustomCard .bedDetails ul.bed-list .bed-item:not(:last-child):after {
+  content: '';
+  width: 1px;
+  height: 50%;
+  top: 10px;
+  right: -20px;
+  background: #ebebeb;
+  position: absolute;
+}
+.CustomCard .bedDetails ul.bed-list .item .card-heading {
+  line-height: 1;
+  padding: 0;
+  margin: 0;
+}
+.CustomCard .bedDetails ul.bed-list .item .card-subheading {
+  line-height: 25px;
+  padding: 0;
+  margin: 0;
+}
+.CustomCard .bedDetails ul.bed-list .bed-item.active .card-heading {
+  font-family: Eina04-Bold;
+  font-size: 20px !important;
+  line-height: 1px;
+  text-align: center;
+  color: #4476df;
+}
+.CustomCard .bedDetails ul.bed-list .bed-item.active .card-subheading {
+  line-height: 5px;
+  position: relative;
+  top: -4px;
+  font-weight: bold;
+}
+.CustomCard .cardHead {
+  width: 100%;
+  height: 42px;
+  padding-top: 15px;
+}
+.CustomCard .cardHead:after {
+  content: '';
+  display: block;
+  border-bottom: 1px solid #ebebeb;
+  width: 100%;
+  margin: 0 auto;
+}
+.CustomCard p.address {
+  font-family: 'Eina 03';
+  font-size: 16px !important;
+  color: #282828;
+}
+.CustomCard h1.label {
+  color: #282828;
+  font-family: Playfair Display;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px !important;
+}
+.backgroundImage {
+  width: 100%;
+  height: 180px;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: block;
+  position: relative;
+}
+.backgroundImage .tagContainer {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  color: #fff;
+}
+.backgroundImage .card-tag {
+  background: #cc952d;
+  position: relative;
+  height: 75px;
+  width: 150px;
+  text-align: center;
+  padding-top: 5px;
+}
+.backgroundImage .card-tag h1,
+.backgroundImage .card-tag p {
+  padding: 0;
+  margin: 0;
+}
+.backgroundImage .card-tag h1 {
+  font-family: Eina04-Bold;
+  font-size: 24px !important;
+  font-weight: bold;
+  padding-top: 8px;
+}
+.backgroundImage .card-tag p {
+  text-align: center;
+  font-family: 'Eina 03';
+  font-size: 14px !important;
+  padding-left: 10px;
+}
+.backgroundImage .card-tag:after {
+  content: '';
+  position: absolute;
+  height: 0;
+  width: 0;
+  border-width: 37.5px 15px;
+  border-style: solid;
+  border-color: #cc952d transparent #cc952d #cc952d;
+  top: 0px;
+  right: -15px;
+}
+
+/*** unit list cards **/
+.CustomCard.wide .card-highlights .highlight-list {
+  padding-top: 0px;
+}
+.CustomCard.wide .card-highlights .highlight-list ul li.item,
+.CustomCard.wide .card-highlights {
+  padding-top: 0px;
+  height: 14px;
+  font-size: 8px;
+  line-height: 12px;
+  margin-bottom: 4px;
+  font-family: 'EINA 03';
+  margin-right: 4px;
+}
+.CustomCard.wide {
+  position: relative;
+}
+.CustomCard.wide .bedDetails {
+  padding-top: 15px;
+  /* padding-bottom:15px; */
+  overflow: hidden;
+}
+.CustomCard.wide .bedDetails ul.bed-list {
+  display: block;
+  width: unset;
+  text-align: left;
+  margin-bottom: 0px;
+  padding-top: 20px;
+}
+
+.CustomCard.wide .bedDetails.mini {
+  list-style: none;
+  padding-top: 0px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  padding-bottom: 0px;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  line-height: 14px;
+  padding-left: 0px;
+}
+.CustomCard.wide .bedDetails.mini li .card-heading {
+  font-size: 10px;
+  font-weight: bolder;
+  display: inline-block;
+  margin-right: 1px;
+}
+.CustomCard.wide .bedDetails.mini li .card-subheading {
+  font-size: 9px;
+  font-weight: 400;
+  display: inline-block;
+}
+.CustomCard.wide .bedDetails.mini li:before {
+  content: '●';
+  font-size: 8px;
+  position: relative;
+  top: 0px;
+  margin-right: 3px;
+}
+.CustomCard.wide .bedDetails.mini li {
+  float: left;
+  width: unset;
+  margin-right: 5px;
+  padding-left: 0px;
+  margin-left: 0px;
+  display: inline-block;
+}
+.CustomCard.wide .bedDetails:not(.mini) .bed-list p {
+  margin-bottom: 0px;
+  display: inline-flex;
+}
+.CustomCard.wide h1.label {
+  font-size: 18px !important;
+  width: 150px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.CustomCard.wide p.address {
+  font-size: 10px !important;
+  width: 145px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.CustomCard.wide .cardHead {
+  width: 100%;
+  height: 30px;
+  padding-top: 10px;
+}
+.CustomCard.wide .bedDetails ul.bed-list .bed-item {
+  line-height: 14px;
+}
+.CustomCard.wide .bedDetails ul.bed-list .bed-item:not(:last-child):after {
+  content: unset;
+}
+.CustomCard.wide .bedDetails ul.bed-list .bed-item.active .card-heading:after {
+  content: '+';
+}
+.CustomCard.wide .bedDetails ul.bed-list .bed-item.active .card-heading {
+  font-size: 16px !important;
+  margin-right: 15px;
+  line-height: 22px;
+  font-family: 'EINA 03';
+}
+
+.CustomCard.wide .bedDetails:after,
+.CustomCard.wide .cardHead:after {
+  content: unset;
+}
+.CustomCard.wide {
+  width: calc(100% - 5px) !important;
+  float: unset;
+  margin: initial;
+  height: 150px !important;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  margin-bottom: 10px;
+  border-bottom-width: 4px;
+  border-bottom-color: #cc952d;
+  transition: border 200ms;
+  /* border-left-color: #ebebeb; */
+  /* border-left-width: 1px; */
+}
+/* .CustomCard.wide:hover{
+    border-bottom-width: 4px;
+    border-bottom-color: #cc952d;
+    transition: border 200ms;
+  } */
+.CustomCard.wide .cardBody {
+  margin-left: 0px;
+  margin-right: 0px;
+}
+.CustomCard.wide .info {
+  margin-left: 20px;
+}
+.CustomCard.wide .backgroundImage {
+  height: 150px;
+  max-width: 146px;
+  min-width: 146px;
+  object-fit: cover;
+}
+.CustomCard.wide .cardBody {
+  width: 100%;
+  display: flex;
+  position: relative;
+}
+button[title='Zoom in'].gm-control-active img,
+button[title='Zoom out'].gm-control-active img {
+  display: none !important;
+}
+button[title='Zoom in'].gm-control-active:before,
+button[title='Zoom out'].gm-control-active:before {
+  content: '';
+  position: absolute;
+  height: 4px;
+  width: 46%;
+  display: block;
+  background: #49454f;
+  border-radius: 15px;
+  top: calc(50% - 0px);
+  left: calc(10% + 4px);
+}
+button[title='Zoom in'].gm-control-active:after {
+  content: '';
+  position: absolute;
+  height: 50%;
+  width: 4px;
+  display: block;
+  background: #49454f;
+  border-radius: 15px;
+  top: calc(10% + 8px);
+  left: calc(50% - 5px);
+}
+.gmnoprint > div {
+  width: 35px !important;
+  border-radius: 5px !important;
+}
+.CustomCard.wide .tagContainer {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+.CustomCard.wide .card-tag {
+  background: #cc952d;
+  position: relative;
+  /* height: 55px;
+    width: 95px; */
+  width: 90px;
+  height: 47px;
+  text-align: center;
+  padding-top: 5px;
+}
+.CustomCard.wide .card-tag h1,
+.CustomCard.wide .card-tag p {
+  padding: 0;
+  margin: 0;
+}
+.CustomCard.wide .bedDetails ul.bed-list .bed-item.active .card-subheading {
+  font-size: 10px;
+  top: 4px;
+  left: -7px;
+  font-style: normal;
+  font-weight: normal;
+  font-family: 'Eina 03';
+  line-height: 14px;
+}
+.CustomCard.wide .card-tag h1 {
+  font-family: 'Eina 03';
+  color: white;
+  font-size: 20px;
+  line-height: 23px;
+  padding-top: 2px;
+}
+.CustomCard.wide .card-tag p {
+  text-align: center;
+  font-family: 'Eina 03';
+  font-size: 10px !important;
+  padding-left: 10px;
+  color: white;
+}
+.CustomCard.wide .card-tag:before {
+  content: '';
+  position: absolute;
+  height: 0;
+  width: 0;
+  border-width: 23.5px 11px;
+  border-style: solid;
+  border-color: #cc952d #cc952d #cc952d transparent;
+  top: 0px;
+  left: -13px;
+}
+.CustomCard.wide .card-highlights .highlight-list ul {
+  display: inline-block;
+}
+/** wide card responsiveness **/
+
+@media only screen and (max-width: 400px) {
+  .CustomCard.wide .Card-ImgSlider,
+  .CustomCard.wide .backgroundImage {
+    width: 100%;
+    min-width: 100%;
+    max-width: 100%;
+  }
+  .CustomCard.wide {
+    width: 100%;
+    height: auto !important;
+    padding-bottom: 25px;
+  }
+  .CustomCard.wide .cardBody {
+    width: 100%;
+    display: block;
+  }
+  .CustomCard.wide .tagContainer {
+    z-index: 500;
+    right: unset;
+    left: 0;
+  }
+  .CustomCard.wide .card-tag:before {
+    border-color: #cc952d transparent #cc952d #cc952d;
+    left: unset;
+    right: -13px;
+  }
+}
+
+/** new index cards **/
+
+.CustomCard-new {
+  width: 325px !important;
+  height: 455px !important;
+  background: #fff;
+  display: block;
+  border: 1px solid #ebebeb;
+  box-sizing: border-box;
+  border-radius: 4px;
+  border-bottom: 3px solid #cc952d;
+  margin: 5px;
+  overflow: hidden;
+}
+.CustomCard-new .cardBody {
+  margin-left: 15px;
+  margin-right: 15px;
+  display: block;
+}
+.CustomCard-new .cardHead {
+  width: 100%;
+  height: 42px;
+  padding-top: 15px;
+  display: block;
+}
+.CustomCard-new .bedDetails {
+  padding-top: 50px !important;
+  display: block;
+  width: 100%;
+}
+.CustomCard-new .bedDetails ul.bed-list {
+  list-style: initial;
+  width: 100%;
+  height: 135px;
+  overflow: auto;
+  margin-bottom: 0px;
+}
+.CustomCard-new .bedDetails ul.bed-list .bed-item {
+  position: relative;
+  margin-left: 20px;
+  width: 93%;
+}
+.CustomCard-new .bedDetails ul.bed-list .bed-item .item {
+  display: inline-flex;
+  width: 100%;
+  padding-bottom: 5px;
+}
+.CustomCard-new .bedDetails ul.bed-list .bed-item .item .left {
+  float: left;
+  width: 50%;
+  text-align: left;
+}
+.CustomCard-new .bedDetails ul.bed-list .bed-item .item .right {
+  float: right;
+  width: 40%;
+  text-align: right;
+}
+.CustomCard-new .bedDetails ul.bed-list .item .card-heading {
+  line-height: 14px;
+  font-size: 12px;
+}
+.CustomCard-new .bedDetails ul.bed-list .bed-item .card-subheading {
+  line-height: 12px;
+  position: relative;
+  padding: 0;
+  margin: 0;
+  font-size: 10px;
+}
+.CustomCard-new .bedDetails ul.bed-list .bed-item.active .right .card-heading {
+  font-family: Eina04-Bold;
+  font-size: 25px !important;
+  line-height: 29px;
+  color: #4476df;
+}
+.CustomCard-new .bedDetails {
+  padding-top: 33px;
+  display: block;
+  width: 100%;
+}
+.CustomCard-new .card-highlights {
+  padding-top: 4px;
+  text-transform: uppercase;
+  font-family: Eina04-Bold;
+}
+.CustomCard-new .card-highlights > b.h {
+  font-size: 10px;
+  line-height: 12px;
+}
+.CustomCard-new .card-highlights {
+  padding-top: 4px;
+  text-transform: uppercase;
+  font-family: Eina04-Bold;
+}
+.CustomCard-new .card-highlights .highlight-list {
+  padding-top: 0px;
+}
+.CustomCard-new .card-highlights .highlight-list ul {
+  list-style: none;
+  display: inline-block;
+  width: 350px;
+  margin: 0 auto;
+  padding: 0;
+}
+.CustomCard-new .card-highlights .highlight-list ul li.item:not(:last-child) {
+  margin-right: 10px;
+}
+.CustomCard-new .card-highlights .highlight-list ul li.item {
+  margin-top: 5px;
+}
+.CustomCard-new .card-highlights .highlight-list ul li.item {
+  float: left;
+  background: #ebebeb;
+  border-radius: 4px;
+  padding-left: 8px;
+  padding-right: 8px;
+  padding-top: 1px;
+  padding-bottom: 1px;
+  color: #282828;
+  text-transform: lowercase;
+  opacity: 0.5;
+  font-size: 10px;
+  line-height: 11px;
+}
+.CustomCard-new a {
+  text-decoration: none;
+  color: unset;
+  width: 100%;
+  height: 100%;
+}
+.CustomCard-new .backgroundImage {
+  width: 325px;
+  height: 140px;
+  object-fit: cover;
+}
+.CustomCard-new .backgroundImage .card-tag h1 {
+  font-family: 'Eina 03';
+  font-size: 30px;
+  font-weight: 600;
+  padding-top: 0px;
+  line-height: 35px;
+}
+.CustomCard-new h1.label {
+  color: #282828;
+  font-family: Playfair Display;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px !important;
+}
+.CustomCard-new .backgroundImage .card-tag p {
+  text-align: center;
+  font-family: 'Eina 03';
+  font-size: 10px !important;
+  padding-left: 10px;
+  line-height: 12px;
+}
+.CustomCard-new .backgroundImage .card-tag:after {
+  content: '';
+  position: absolute;
+  height: 0;
+  width: 0;
+  border-width: 30.5px 15px;
+  border-style: solid;
+  border-color: #cc952d transparent #cc952d #cc952d;
+  top: 0px;
+  right: -15px;
+}
+.CustomCard-new .backgroundImage .card-tag {
+  background: #cc952d;
+  position: relative;
+  height: 61px;
+  width: 125px;
+  text-align: center;
+  padding-top: 3px;
+}
+.CustomCard-new p.address {
+  font-family: 'Eina 03';
+  font-size: 12px !important;
+  color: #282828;
+  padding: 0px !important;
+}
+.CustomCard-new .bedDetails:after {
+  content: '';
+  display: block;
+  border-bottom: 1px solid #ebebeb;
+  width: 100%;
+  margin: 0 auto;
+}
+.CustomCard-new .cardHead:after {
+  content: '';
+  display: block;
+  border-bottom: 1px solid #ebebeb;
+  width: 100%;
+  margin: 0 auto;
+}

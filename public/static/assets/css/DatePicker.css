@@ -1,0 +1,15 @@
+.react-datepicker__day--outside-month {
+  color: #c2cedb !important;
+}
+.react-datepicker__day--keyboard-selected,
+.react-datepicker__day--today {
+  background: #7985fe !important;
+  border-radius: 50% !important;
+  color: white !important;
+}
+.react-datepicker__header {
+  background-color: #fff !important;
+}
+.react-datepicker {
+  font-family: 'EINA 03' !important;
+}

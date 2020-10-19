@@ -1,0 +1,742 @@
+@font-face {
+    font-family: 'effrabold';
+    src: url('../fonts/effra_std_bd-webfont.woff2') format('woff2'),
+        url('../fonts/effra_std_bd-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'effrabold_italic';
+    src: url('../fonts/effra_std_bdit-webfont.woff2') format('woff2'),
+        url('../fonts/effra_std_bdit-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'effra_heavyregular';
+    src: url('../fonts/effra_std_he-webfont.woff2') format('woff2'),
+        url('../fonts/effra_std_he-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'effra_heavyitalic';
+    src: url('../fonts/effra_std_heit-webfont.woff2') format('woff2'),
+        url('../fonts/effra_std_heit-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'effraitalic';
+    src: url('../fonts/effra_std_it-webfont.woff2') format('woff2'),
+        url('../fonts/effra_std_it-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'effra_lightregular';
+    src: url('../fonts/effra_std_lt-webfont.woff2') format('woff2'),
+        url('../fonts/effra_std_lt-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'effra_lightitalic';
+    src: url('../fonts/effra_std_ltit-webfont.woff2') format('woff2'),
+        url('../fonts/effra_std_ltit-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'effra_mediumregular';
+    src: url('../fonts/effra_std_md-webfont.woff2') format('woff2'),
+        url('../fonts/effra_std_md-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'effra_mediumitalic';
+    src: url('../fonts/effra_std_mdit-webfont.woff2') format('woff2'),
+        url('../fonts/effra_std_mdit-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'effraregular';
+    src: url('../fonts/effra_std_rg-webfont.woff2') format('woff2'),
+        url('../fonts/effra_std_rg-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'eina03-bolduploaded_file';
+    src: url('../fonts/eina03-bold-webfont.woff2') format('woff2'),
+        url('../fonts/eina03-bold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'eina03-bolditalicuploadedfile';
+    src: url('../fonts/eina03-bolditalic-webfont.woff2') format('woff2'),
+        url('../fonts/eina03-bolditalic-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'eina_03regular';
+    src: url('../fonts/textaxis_-_eina03-regular-webfont.woff2') format('woff2'),
+        url('../fonts/textaxis_-_eina03-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'eina_03semibold';
+    src: url('../fonts/textaxis_-_eina03-semibold-webfont.woff2') format('woff2'),
+        url('../fonts/textaxis_-_eina03-semibold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+.cst-btn {
+    background: #030D4F;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.25);
+    border-radius: 8px;
+    color: #fff !important;
+    padding: 7px 8px;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 24px;
+    cursor: pointer;
+    max-width: 135px;
+    font-family: 'eina_03regular';
+    display: block;
+    text-align: center;
+}
+
+/*header starts here*/
+
+header ul.navbar-nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: auto;
+}
+
+header .dropdown-toggle::after {
+    display: none;
+}
+
+li.dropdown,
+li.nav-item {
+    padding: 8px 20px;
+    font-family: 'eina_03semibold';
+}
+
+li.dropdown:first-child {
+    padding-left: 0;
+}
+
+li.nav-item:last-child {
+    padding-right: 0;
+}
+
+li.dropdown a.dropdown-toggle {
+    padding: 8px;
+    color: #49454F;
+    text-transform: capitalize;
+    font-size: 24px;
+}
+
+.submit-logo-sec .input-group-btn {
+    background: #030d4f;
+    border-radius: 8px;
+    height: 37px;
+}
+
+ul.dropdown-menu.show {
+    background: #FFFFFF;
+    box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.25);
+    border-radius: 8px;
+    padding: 15px 18px;
+}
+
+ul.dropdown-menu.show li a {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 24px;
+    color: #49454F;
+    text-transform: capitalize;
+}
+
+ul.dropdown-menu.show li {
+    padding-bottom: 5px;
+    font-family: 'eina_03regular';
+}
+
+ul.dropdown-menu.show li:last-child {
+    padding-bottom: 0;
+}
+
+header .outer-wrap {
+    display: flex;
+    width: 100%;
+}
+
+header .left-side-content {
+    width: 50%;
+    border-right: 2px solid rgba(73, 69, 79, 0.1);
+}
+
+header .right-side-content {
+    width: 60%;
+    padding: 0 15px;
+}
+
+header p.dropdown-heading {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 24px;
+    color: #49454F;
+    text-transform: uppercase;
+    margin-bottom: 8px;
+    font-family: 'eina_03semibold';
+}
+
+header p.dropdown-heading.landlords {
+    margin-top: 25px;
+}
+
+header .dropdown-menu {
+
+    min-width: 291px;
+    left: 35px;
+
+}
+
+li.dropdown.rent.show .dropdown-menu {
+
+    min-width: 413px;
+    left: 6px;
+
+}
+header li.nav-item a.nav-link.account:hover{
+    color:#fff !important;
+}
+header li.nav-item a.nav-link.account{
+    background: #030D4F;
+    color: #fff !important;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    line-height: 36px;
+}
+header li.nav-item a.nav-link {
+    color: #49454F !important;
+
+    font-size: 24px;
+}
+
+header li.nav-item a.nav-link:hover,
+ul.dropdown-menu.show li a:hover {
+    color: #CC952D !important;
+}
+
+li.nav-item.dropdown.rent.show a.nav-link.dropdown-toggle,
+li.nav-item.dropdown.show a.nav-link.dropdown-toggle {
+    color: #CC952D !important;
+}
+
+/*header  section ends here*/
+
+
+/*login modal css*/
+div#myModal {
+    padding-right: 0 !important;
+}
+
+div#myModal .modal-dialog {
+
+    margin: 15px auto 0;
+}
+
+div#signup .modal-dialog {
+
+    margin: 15px auto;
+}
+
+div#myModal .modal-content,
+div#signup .modal-content,
+#forgot .modal-content,
+div#otp-form .modal-content {
+    border-radius: 0;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.25);
+}
+
+/*#forgot .modal-dialog {
+   
+    margin: 40px auto;
+}*/
+
+div#myModal .modal-header,
+div#myModal .modal-footer,
+div#myModal .modal-body,
+div#signup .modal-header,
+div#signup .modal-footer,
+div#signup .modal-body,
+#forgot .modal-header,
+#forgot .modal-footer,
+#forgot .modal-body,
+div#otp-form .modal-header,
+div#otp-form .modal-footer,
+div#otp-form .modal-body {
+    border: 0;
+    background: #FCF9F4;
+}
+
+div#myModal .modal-header,
+#signup .modal-header,
+#forgot .modal-header,
+div#otp-form .modal-header {
+    flex-direction: column;
+    align-items: center;
+}
+
+div#myModal .modal-header h1,
+#signup .modal-header h1,
+#forgot .modal-header h1,
+div#otp-form .modal-header h1 {
+    font-family: Playfair Display;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 40px;
+    line-height: 53px;
+
+    text-align: center;
+    margin-bottom: 10px;
+    color: #49454F;
+    margin-top: 15px;
+
+}
+
+div#myModal .modal-header p,
+#signup .modal-header p,
+#forgot .modal-header p,
+div#otp-form .modal-header p {
+
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 36px;
+    font-family: 'eina_03regular';
+
+
+    text-align: center;
+
+    color: #49454F;
+}
+
+div#myModal .modal-body .login-form,
+#signup .modal-body .signup-form,
+#forgot .modal-body .login-form,
+div#otp-form .modal-body .login-form {
+    width: 100%;
+    max-width: 78%;
+    margin: 0 auto;
+}
+
+div#myModal .modal-header .inner-content,
+div#signup .modal-header .inner-content,
+#forgot .modal-header .inner-content,
+div#otp-form .modal-header .inner-content {
+    width: 100%;
+    max-width: 79%;
+    margin: 0 auto;
+}
+
+form.login-form .form-group,
+.signup-form .form-group {
+    border-bottom: 1px solid #49454F;
+    margin-bottom: 20px;
+
+    border-radius: 8px 8px 0px 0px;
+}
+
+.signup-form .form-group.name {
+    border-bottom: none !important;
+
+}
+
+.signup-form .form-group.name input {
+    width: 47%;
+    display: initial;
+    border-bottom: 1px solid #49454F;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+
+
+}
+
+.signup-form .form-group.name input:first-child {
+    margin-right: 7px;
+
+}
+
+.signup-form .form-group.name input:last-child {
+    margin-left: 8px;
+}
+
+form.login-form .form-group input,
+.signup-form .form-group input {
+    height: 50px;
+    border-radius: 8px 8px 0px 0px;
+    border-color: #fff;
+    -moz-appearance: none;
+}
+
+form.login-form .form-group input::placeholder,
+.signup-form .form-group input::placeholder {
+
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 36px;
+    color: #49454F;
+    opacity: 0.6;
+    color: #49454F;
+    font-family: 'eina_03regular';
+    -webkit-appearance: none;
+
+
+}
+
+form.login-form .form-group input:hover,
+.signup-form .form-group input:hover,
+form.login-form .form-group input:active,
+.signup-form .form-group input:active {
+    box-shadow: none;
+}
+
+form.login-form .form-group input,
+.signup-form .form-group input {
+
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 36px;
+    color: #000;
+    padding-bottom: 0;
+    padding-left: 0;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+
+}
+
+form.login-form button.btn.btn-primary,
+.signup-form button.btn.btn-primary {
+    width: 100% !important;
+    background: #030D4F;
+    box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 8px;
+
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 36px;
+
+    border-color: #030D4F;
+    text-align: center;
+    margin-top: 20px;
+    color: #FFFFFF;
+}
+
+form.login-form button.btn.btn-primary,
+.signup-form button.btn.btn-primary,
+form.login-form .form-group input,
+.signup-form .form-group input {
+    font-family: 'eina_03regular';
+
+}
+
+form.login-form button.btn.btn-primary:hover,
+.signup-form button.btn.btn-primary:hover,
+form.login-form button.btn.btn-primary:focus,
+.signup-form button.btn.btn-primary:focus {
+    background: #CC952D;
+    border-color: #CC952D;
+    box-shadow: none !important;
+}
+
+.login-option ul,
+.signup-option ul {
+    display: flex;
+    justify-content: space-between;
+    margin: 25px 0;
+}
+
+.login-option ul li,
+.signup-option ul li {
+
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 24px;
+
+
+    display: flex;
+    align-items: center;
+    color: #49454F;
+    font-family: 'eina_03regular';
+
+}
+
+.login-option ul li a,
+.signup-option ul li a {
+    color: #030D4F;
+    font-family: 'eina_03semibold';
+}
+
+.signup-option ul li a,
+form.login-form.otp-form ul li a {
+    margin-left: 10px;
+}
+
+.login-option p,
+.signup-option p {
+    font-family: 'eina_03semibold';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 24px;
+
+
+
+    color: #000000;
+}
+
+.login-option p a,
+.signup-option p a {
+    color: #49454F;
+}
+
+.login-option p a:hover,
+.signup-option p a:hover,
+.login-option ul li a:hover,
+.signup-option ul li a:hover {
+    color: #CC952D;
+}
+
+div#otp-form .inner-content p.otp-msg {
+    margin-top: 40px;
+
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 24px;
+
+
+
+    color: #49454F;
+
+}
+
+form.login-form.otp-form .form-group {
+    border-bottom: 0;
+    display: flex;
+}
+
+form.login-form.otp-form .form-group input {
+    box-shadow: inset 0px 0px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 0;
+    width: 50px;
+
+    margin-right: 13px;
+    padding: .375rem .75rem;
+    text-align: center;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+
+
+}
+
+form.login-form.otp-form .form-group input:last-child {
+    margin-right: 0;
+}
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+
+.signup-form button.btn.btn-primary:focus div#signup {
+
+    display: none;
+}
+
+form.login-form.otp-form ul {
+    margin-bottom: 0 !important;
+}
+
+form.login-form.otp-form .modal-dialog {
+
+    margin: 77px auto !important;
+}
+
+
+.guide-btn a.cst-btn.faq-btn {
+    margin: 0 auto;
+    margin-top: 19px;
+}
+
+.guide-btn a.cst-btn.faq-btn:hover,
+.guide-btn a.cst-btn:hover {
+    background-color: #CC952D;
+}
+
+section.banner {
+    background: #FCF9F4;
+}
+
+button.btn.btn-default {
+    padding-right: 0;
+}
+
+header span.toggle i {
+    color: #030d4f;
+    font-size: 23px;
+}
+
+header button.navbar-toggler {
+    background: transparent;
+    border: none;
+
+    padding-top: 12px;
+}
+
+section.guide-apartmt .outer-wrap figure {
+    display: flex;
+    flex-direction: column;
+}
+
+footer .input-group-btn button.btn.btn-default,
+.submit-logo-sec .input-group-btn button.btn.btn-default {
+    padding-right: 12px;
+}
+
+.submit-logo-sec a.navbar-brand-footer {
+    display: block;
+
+    margin: 30px 0;
+    display: none;
+}
+
+
+#close-resp-menu {
+    display: block;
+    font-family: 'eina_03regular';
+    padding: 5px;
+    text-align: right;
+    cursor: pointer;
+}
+
+section.guide-apartmt .guide-ctry .col-lg-3 {
+    padding-left: 0;
+}
+
+#navbarSupportedContent ul.resp-menu {
+    display: none;
+}
+
+section.apartmt-offers .upper-content {
+    display: none;
+}
+
+
+section.search-apartmt p.apart-head-2,
+section.search-apartmt span.apart-cont-2 {
+    display: none;
+}
+
+footer ul.contact-info {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+li.dropdown:focus,
+li.nav-item:focus,
+li.dropdown a:focus,
+li.nav-item a:focus {
+    outline: none;
+}

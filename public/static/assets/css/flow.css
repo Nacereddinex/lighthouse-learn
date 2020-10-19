@@ -1,0 +1,337 @@
+.rc-slider{
+    margin-left: 10%;
+    width: 80% !important;
+    margin-top: 40px;
+    margin-bottom: 60px;
+}
+.rc-slider-handle {
+    position: absolute !important;
+    width: 47px !important;
+    height: 47px !important;
+    cursor: pointer;
+    cursor: -webkit-grab;
+    margin-top: -20px !important;
+    cursor: grab;
+    border-radius: 50% !important;
+    border: solid 10px #7985FE !important;
+    background-color: #FFE296 !important;
+    touch-action: pan-x;
+}
+.rc-slider-track {
+    position: absolute;
+    left: 0;
+    height: 10px !important;
+    border-radius: 6px;
+    background-color: #7985FE !important;
+}
+.sliderPrice{
+    background: #7985FE;
+    border-radius: 10px;
+    padding: 10px;
+    color: #fff;
+    font-family: 'Eina 03';
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 36px;
+}
+.banner .lower-banner{
+    height:calc(100% - 260px) !important;
+}
+.moreRowControl{
+    height:180px;
+    background:#FAF4EA;
+}
+.moreControlHeading{
+    font-family: eina_03regular;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 36px;
+    color: #000000;
+}
+.moreControlIcon{
+    color:#FFC52C;
+}
+.google-places-autocomplete__suggestions-container{
+    width: 271px;
+    right: 0;
+    bottom: 75px;
+    left:unset;
+}
+.welcomeHeading{
+    font-size: 32px;
+    color: #FFE296;
+    font-family: "Playfair Display";
+    text-shadow: 2px 0px 6px rgba(0, 0, 0, 1);
+    font-style: italic;
+    font-weight: bold;
+    letter-spacing: 0.01em;
+}
+.simpleHeading{
+    font-size: 60px;
+    color: #fff;
+    font-family: "eina_03regular";
+    font-style: normal;
+    font-weight: 600;
+    text-shadow: 2px 0px 6px rgba(0, 0, 0, 1);
+    text-transform: uppercase;
+    margin-bottom: 35px;
+}
+.controlRow{
+    position: relative;
+    left:35px;
+    display:inline-flex;
+}
+.centeredFlow{
+    text-align: center!important;
+    margin-top: calc(60vh - 18%);
+}
+.flex{
+    display: block;
+    margin: 0 auto;
+    width: 100%;
+}
+form.search-btn .input-group{
+    border-bottom:0px none !important;
+}
+.form-control.searchInp{
+    padding-left:5px !important;
+    font-size: 22px;
+}
+.fas.fa-map-marker-alt {
+    color: #7985FE;
+    height: 32px;
+    width: 24px;
+    font-size: 32px;
+}
+.modal1 .modal-content, .modal2 .modal-content{
+    box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.4), 0px 0px 8px rgba(0, 0, 0, 0.15);
+}
+.modal1 .modal-content,.modal1 .modal-header,
+.modal2 .modal-content, .modal2 .modal-header{
+    overflow: hidden !important;
+    border-radius: 20px !important;
+    height: 380px;
+}
+.modal2 .modal-content{
+    min-width: 700px;
+    margin: 0 auto;
+    left: -90px;
+}
+.modal1.modal-header:before, .modal2.modal-header:before{
+    content: '';
+    position: absolute;
+    height: 113px;
+    background: #7985FE;
+    width: 100%;
+    top: 0;
+    left: 0;
+    border-radius: 0px;
+}
+.modal2.modal-header:before{
+    background: #FFE296;
+    color: #282828;
+}
+.modal1.modal-header:after {
+    content: '';
+    position: absolute;
+    background: url(/static/assets/images/splitphone.png) center center no-repeat;
+    height: 69px;
+    display: block;
+    margin: 0 auto;
+    width: 100%;
+    background-size: contain;
+    top: 79px;
+    left: 5px;
+}
+.modal1.modal-header, .modal2.modal-header{
+    height:155px;
+    border:0px none;
+    outline:0px none;
+}
+.modal2.modal-header{
+    display:block;
+    position: relative;
+    widows: 100%;
+}
+.modal2.modal-header h1{
+    z-index: 2;
+    text-align: center;
+    min-width: 100%;
+    font-family: 'Playfair Display';
+    font-size: 30px;
+    font-style: italic;
+    line-height: 36px;
+    color: #FFFFFF;
+    text-shadow: 0px 0px 4px rgba(0, 0, 0, 0.4), 0px 0px 8px rgba(0, 0, 0, 0.15);
+    position: absolute;
+}
+.modal2.modal-header p{
+    font-family: 'Eina 03';
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 36px;
+    display: block;
+    text-align: center;
+    color: #282828;
+    letter-spacing: 0;
+    z-index: 1;
+    min-width: 100%;
+    position: absolute;
+    top: 53px;
+    left: 0;
+}
+.modal2 .bedSelectBlock{
+    width: 160px;
+    height: 135px;
+    box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.4), 0px 0px 8px rgba(0, 0, 0, 0.15);
+    border-radius: 8px;
+    cursor: pointer;
+    margin-right: 10px;
+}
+.modal2 .BlockBadge{
+    background: #FFECB9;
+    width: 72px;
+    height: 72px;
+    color: #7985FE;
+    font-family: 'Eina 03';
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 36px;
+    display: block;
+    align-items: center;
+    text-align: center;
+    border-radius: 50%;
+    margin: 0 auto;
+    margin-top: 15px;
+    padding-top: 16px;   
+}
+.modal2 .BlockLabel{
+    display: block;
+    color: #000000;
+    font-family: 'Eina 03';
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 36px;
+    width: 100%;
+    text-align: center;
+}
+.modal2 .bedSelectBlock:hover, .modal2 .bedSelectBlock.active{
+    box-shadow: -4px -4px 0px #7985FE, 4px 4px 0px #7985FE, 
+    -4px 4px 0px #7985fe, 4px -4px 0px #7985fe;
+    box-sizing: border-box;
+    border-radius: 8px;
+}
+.modal2 .bedSelectBlock:hover .BlockBadge, .modal2 .bedSelectBlock.active .BlockBadge{
+    background: #7985FE;
+    color:#FFECB9;
+}
+.modal1 h1{
+    color: #000;
+    font-family: 'eina_03regular';
+    font-style: normal;
+    font-weight: bolder;
+    font-size: 20px;
+    line-height: 36px;
+}
+.modal1 p{
+    font-family: 'eina_03regular';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 24px;
+    color: #000000; 
+}
+.banner form.search-btn {
+    height: 66px;
+    width: 274px;
+    padding: 8px 0px 0px 0px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
+    max-width: unset;
+    margin: unset;
+    position: unset;
+    top: unset;
+    left: unset;
+    transform: none;
+    float:right;
+}
+
+.modal-body.modal1{
+    width:100%;
+    border:0px none;
+    background:#fff;
+    height: 210px;
+}
+.modal1 .iner-contnent{
+    padding-bottom:10px;
+}
+.modal-body.modal1 input{
+    color: #000;
+    border: 0px none;
+    outline: 0px none;
+    font-size: 32px;
+    font-family: 'eina_03regular';
+    width: 100%;
+    text-align: center;
+    letter-spacing: 15px;
+    font-weight: bold;
+}
+.modal1 .blueSBtn, .modal2 .blueSBtn{
+    background: #7985FE;
+    border-radius: 10px;
+    width: 158px;
+    height: 53px;
+    margin: 0 auto;
+    margin-bottom: 10px;
+    border: 0px none;
+    outline: 0px none;
+    display: block;
+    color: #fff;
+    font-family: 'eina_03regular';
+    font-style: normal;
+    margin-top: 10px;
+    margin-left: 3px;
+    margin-right: 3px;
+}
+.modal1 .blueSBtn.linkBtn{
+    color: #282828;
+    text-decoration: underline;
+    background:white;
+}
+.modal2 .blueSBtn{
+    background: #FFE296;
+    color: #282828;
+}
+.blueSubBtn {
+    background: #7985FE;
+    border: 1px solid rgba(73, 69, 79, 0.5);
+    box-sizing: border-box;
+    box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.4), 0px 0px 8px rgba(0, 0, 0, 0.15);
+    border-radius: 10px;
+    width: 160px;
+    height: 66px;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 36px;
+    color: #FFFFFF;
+    align-items: center;
+    text-align: center;
+    font-family: 'eina_03regular';
+    outline: 0px none;
+    cursor: pointer;
+}
+
+@media only screen and (max-width: 575px){
+    .banner form.search-btn{
+        float:unset;
+    }
+    .controlRow{
+        display:inline-block;
+        left:0;
+    }
+    .simpleHeading{
+        font-size:40px;
+    }
+}

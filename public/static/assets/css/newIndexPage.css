@@ -1,0 +1,2193 @@
+@font-face {
+    font-family: "Playfair Display";
+    src: url(/static/assets/fonts/PlayfairDisplay-Regular.ttf);
+}
+
+@font-face {
+    font-family: "Playfair Bold";
+    src: url(/static/assets/fonts/PlayfairDisplay-Bold.ttf);
+}
+
+@font-face {
+    font-family: "EINA 03";
+    src: url(/static/assets/fonts/Textaxis\ -\ Eina03-Regular.otf);
+}
+
+@font-face {
+    font-family: "EINA 03 SemiBold";
+    src: url(/static/assets/fonts/Textaxis\ -\ Eina03-SemiBold.otf);
+}
+
+body {
+    padding: 0px;
+    margin: 0px;
+}
+
+ul.social {
+    list-style: none;
+    padding-left: 0px;
+}
+.navContainer {
+    height: auto;
+    padding-bottom: 78px;
+    position: relative;
+    margin: 0px;
+    padding: 0px;
+    margin-bottom: 95px;
+}
+
+.NavOverLay {
+    padding-top: 32px;
+    max-width: 607px;
+    height: 600px;
+    background: #FAF4EA;
+    border-radius: 0px;
+    display: block;
+    position: relative;
+}
+
+.NavOverLay img {
+    margin: 0 auto;
+}
+
+.NavOverLay img.logoImage {
+    width: 305px;
+    display: block;
+}
+
+.NavOverLay img.logoSubImage {
+    position: relative;
+    max-height: 635px;
+    left: 30px;
+    /* bottom: -6px; */
+}
+
+.navIntro h1 {
+    font-family: "Playfair Display";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 70px;
+    line-height: 93px;
+    text-align: center;
+    width: 100%;
+    color: #49454F;
+}
+
+.navIntro h5 {
+    font-family: "Eina 03";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 26px;
+    line-height: 36px;
+    text-align: center;
+    color: #49454F;
+}
+
+.navIntroContainer {
+    padding-top: 210px;
+}
+
+.navIntroContainer .navForm {
+    padding-top: 80px;
+    /* margin-left:30px; */
+    /* margin-left: 5%; */
+}
+
+.navForm b.navFormHead {
+    font-family: "Eina 03";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 26px;
+    line-height: 36px;
+    color: #49454F;
+    height: 48px;
+    display: block;
+}
+
+.navForm .formBody {
+    height: 115px;
+    padding-left:10px;
+    /* max-width: 594px; */
+}
+
+.searchInp {
+    font-family: 'Playfair Display';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 32px;
+    width: 100%;
+    max-width: 600px;
+    letter-spacing: 0.01em;
+    color: #49454F;
+    background: #FFFFFF;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.25);
+    border-radius: 7px;
+    padding-left: 55px;
+    border: 0px none;
+    height: 60px;
+    margin-bottom: 10px;
+}
+
+.searchAddon,
+.filterContainer {
+    display: block;
+    position: relative;
+}
+
+.formBody .filterContainer .filterList {
+    display: inline-block;
+    height: 47px;
+    background: #FFFFFF;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+    margin-left: 0px;
+    padding-left: 10px;
+    padding-top: 8px;
+    padding-right: 10px;
+    margin-right: 10px;
+}
+
+.filterContainer .filterList:not(:first-child) {
+    width: 50px;
+    position: relative;
+    top: 7px;
+}
+
+.formBody .filterContainer .filterList:first-child {
+    width: 347px;
+}
+
+.filterContainer .filterList ul {
+    list-style: none;
+    display: inline-block;
+}
+
+.filterContainer .filterList li {
+    display: inline-block;
+    font-family: "Eina 03";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 28px;
+    text-align: center;
+    color: #49454F;
+    height: 30px;
+    padding-left: 19px;
+    padding-right: 19px;
+}
+
+.filterContainer .filterList:not(:first-child) li {
+    padding-left: 0px;
+    padding-right: 0px;
+    padding-top: 0px;
+}
+
+.filterContainer .filterList li:hover,
+.filterList li.active {
+    background: rgba(204, 45, 45, 0.15);
+    border-radius: 10px;
+    border-radius: 30px;
+    /* border-radius: 10px; for icons*/
+
+}
+
+/* li:hover{
+height: 38px;
+width: 38px ;
+height: 38px;
+width: 38px ;
+} */
+
+.filterContainer .searchBtn {
+    width: 111px;
+    background: #4476DF;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.25);
+    border-radius: 5px;
+    height: 50px;
+    font-family: "Eina 03";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 28px;
+    text-align: center;
+    color: #FFFFFF;
+    border: 0px none;
+}
+
+.filterContainer .searchBtn:hover,
+.filterContainer .searchBtn:focus,
+.searchAddon .searchInp:hover,
+.searchAddon .searchInp:focus {
+    outline: 0px none;
+}
+
+.icon.search {
+    background: url('/static/assets/Icons/Path 1091.svg') center center no-repeat;
+    display: block;
+    margin: 0 auto;
+    width: 33px;
+    height: 33px;
+    background-size: 33px 33px;
+    position: absolute;
+    left: 15px;
+    top: 15px;
+}
+
+.iIcon:hover {
+    border-radius: 10px !important;
+    padding: 5;
+    margin: 5;
+}
+
+.iIcon i {
+    border-radius: 10px !important;
+    padding: 5 !important;
+    margin: 5 !important;
+    left: -3px;
+    top: -1px;
+}
+
+.icon.dog {
+    background: url('/static/assets/Icons/dark dog 1.svg') center center no-repeat;
+    background-size: 35px 35px;
+    display: block;
+    width: 35px;
+    height: 35px;
+    padding-left: 0px;
+    margin-left: 0px;
+    /* padding-right: 3px;
+    margin-right: 3px; */
+}
+
+.icon.dog:hover,
+.icon.washer:hover {
+    border-radius: 10px !important;
+}
+
+.icon.washer {
+    background: url('/static/assets/Icons/dark wd 1.svg') center center no-repeat;
+    background-size: 35px 35px;
+    display: block;
+    width: 35px;
+    height: 35px;
+}
+
+.customTooltip {
+    display: block;
+
+}
+
+.customTooltip:before {
+    
+    content: '';
+    background: url('/static/assets/Icons/Polygon 8.svg') center center no-repeat;
+    position: absolute;
+    height: 10px;
+    width: 10px;
+    display: block;
+    left: 21px;
+    top: 46px;
+    opacity: 0;
+    z-index: -999;
+}
+
+.customTooltip:after {
+    content: attr(data-tooltip);
+    background: #FFFFFF;
+    border-radius: 10px;
+    opacity: 0;
+    font-family: 'Eina 03';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 9px;
+    line-height: 17px;
+    align-items: center;
+    text-align: center;
+    color: #49454F;
+    padding-left: 10px;
+    padding-right: 10px;
+    width: 77px;
+    height: 19px;
+    border: 1px solid #49454F;
+    z-index: 22222;
+    position: absolute;
+    left: -11px;
+    top: 50px;
+    z-index: 1 !important;
+}
+
+.customTooltip:hover:after,
+.customTooltip:hover:before {
+    opacity: 1;
+    z-index: 999;
+}
+
+.c1.container-fluid,
+.c2.cardC {
+    background: #FAF4EA;
+    height: auto;
+    padding-top: 61px;
+    padding-left: 98px;
+    padding-bottom: 40px;
+}
+
+.c2.cardC {
+    background: #fff;
+}
+
+.cardC.resPadding.cityCardPad:after {
+    content: '';
+    background: url('/static/assets/images/3bdots.png') center center no-repeat;
+    position: absolute;
+    right: 0;
+    width: 55px;
+    height: 190px;
+    top: 30px;
+    display: block;
+}
+
+.c2.cardC:after {
+    content: '';
+    background: url('/static/assets/images/odots.png') center center no-repeat;
+    position: absolute;
+    left: 0;
+    width: 25px;
+    height: 190px;
+    top: 30px;
+    display: block;
+}
+
+.c1.container-fluid:after {
+    content: '';
+    background: url('/static/assets/images/bdots.png') center center no-repeat;
+    position: absolute;
+    right: 0;
+    width: 25px;
+    height: 190px;
+    top: 30px;
+    display: block;
+}
+
+.cardC .smallheading {
+    font-family: 'Eina 03';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 26px;
+    line-height: 36px;
+    display: flex;
+    align-items: center;
+    color: #49454F;
+    position: relative;
+    height: 50px;
+}
+
+.cardC .smallheading:after {
+    content: '';
+    position: absolute;
+    /* width: 9%; */
+    width: 156.45px;
+    height: 3px;
+    display: block;
+    border-bottom: 3px solid #4476DF;
+    bottom: -6px;
+    left: 0;
+}
+
+.cardC h1.heading {
+    margin-top: 13px;
+    font-family: Playfair Display;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 40px;
+    line-height: 53px;
+    /* display: flex; */
+    align-items: center;
+    color: #49454F;
+    height: 57px;
+    margin-bottom:20px;
+}
+
+.cardC .blueCard {
+    max-width: 687px;
+    min-height: 656px;
+    background: #FFFFFF;
+    box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.15);
+    border-radius: 5px;
+    border-bottom: 3px solid #4476DF;
+    padding-top: 39px;
+    padding-left: 57px;
+    padding-right: 70px;
+    margin-top: 64px;
+    position: relative;
+}
+
+.cardC .mobileCon {
+    padding-top: 35px !important;
+    /* padding-left: 80px; */
+}
+
+.cardC .blueCard h1 {
+    font-family: 'Playfair Display';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 32px;
+    line-height: 48px;
+    display: flex;
+    align-items: center;
+    color: #49454F;
+    height: 40px;
+    left: calc(50% - 611px/2 - 260.5px);
+    /* width: 611px; */
+}
+
+.cardC .blueCard ul {
+    list-style: none;
+    padding-left: 0px;
+    padding-top: 46px;
+}
+.blueCard li:last-child {
+        height: 0px;
+        margin-bottom: 0px;
+    }
+.cardC .blueCard li:before {
+    content: attr(data-count);
+    font-family: 'Effra Medium';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 40px;
+    line-height: 48px;
+    /* or 120% */
+    height: 41px;
+    display: inline-block;
+    align-items: center;
+    color: #4476DF;
+    margin-right: 23px;
+}
+
+.c2.cardC .smallheading {
+    font-family: 'Eina 03';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 26px;
+    line-height: 36px;
+    display: block;
+    align-items: center;
+    color: #49454F;
+    position: relative;
+    height: 50px;
+}
+
+.c4 .smallheading.orange {
+    display: block !important;
+    margin-top: 61px;
+}
+
+.cardC .smallheading.orange:after {
+    content: '';
+    position: relative;
+    width: 66%;
+    height: 3px;
+    display: block;
+    border-bottom: 3px solid #CC952D;
+    bottom: -28px;
+    right: 0;
+    float: right;
+}
+
+.c2 .introRow {
+    margin-bottom: 92px;
+}
+
+.cardC.resPadding.cityCardPad h1.heading {
+    margin-bottom: 58px;
+}
+
+.c2 .flatCard ul {
+    padding-left: 0px;
+    list-style: none;
+    display: block;
+    float: left;
+}
+
+.c2 .flatCard li {
+    margin-bottom: 82px;
+    display: block;
+    padding-bottom: 115px;
+}
+
+.c2 .flatCard li:last-child {
+    margin-bottom: 35px;
+}
+
+.c2 .flatCard a {
+    font-family: 'Eina 03';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 48px;
+    align-items: center;
+    text-decoration-line: underline;
+    color: #4476DF;
+    display: block;
+    float: left;
+}
+
+.c2.cardC .mobileCon {
+    padding-top: 0px !important;
+    position: relative;
+    top: -60px;
+}
+
+.c2 .flatCard li p {
+    font-family: 'Eina 03';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 35px;
+    display: block;
+    align-items: center;
+    color: #49454F;
+    float: left;
+    width:100%;
+}
+
+.c2 .flatCard li b:after {
+    content: '';
+    display: block;
+    float: left;
+    width: 40%;
+    height: 3px;
+    background: #CC952D;
+    position: relative;
+    top: 10px;
+    margin-bottom: 14px;
+}
+
+.c2 .flatCard li b {
+    display: block;
+    font-family: 'Playfair Display';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 35px;
+    line-height: 32px;
+    align-items: center;
+    color: #49454F;
+    float: left;
+}
+
+.blueCard .text {
+    display: inline-block;
+}
+
+.blueCard li {
+    display: flex;
+    margin-bottom: 23px;
+}
+
+.blueCard li b {
+    font-family: 'Eina 03';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 26px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    color: #49454F;
+    margin-bottom: 25px;
+}
+
+.blueCard li p {
+    font-family: 'Eina 03';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 25px;
+    /* or 139% */
+    color: #49454F;
+}
+
+.blueCard a {
+    font-family: 'Eina 03';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 48px;
+    /* or 267% */
+    display: flex;
+    align-items: center;
+    text-decoration-line: underline;
+    color: #4476DF;
+    padding-left: 40px;
+}
+.footerLinksC a{
+    padding-top:20px;
+    padding-bottom:20px;
+    text-decoration: none;
+    outline: 0px none;
+    display: table;
+}
+.cityCardContainer {
+    display: inline-block;
+    margin-left: 55px;
+}
+
+.cityCard {
+    display: inline-block;
+    position: relative;
+    width: 231px;
+    max-width: 231px;
+    height: 355px;
+    background: url("/static/assets/images/sfbg.png") center center no-repeat;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 8px;
+    margin:4.7px;
+}
+
+.cityCard.sf {
+    background: url("/static/assets/images/sfbg.png") center center no-repeat;
+}
+
+.cityCard.la {
+    background: url("/static/assets/images/labg.png") center center no-repeat;
+}
+
+.cityCard.dallas {
+    background: url("/static/assets/images/dallasbg.png") center center no-repeat;
+}
+
+.cityCard.boston {
+    background: url("/static/assets/images/boston.png") center center no-repeat;
+}
+
+.cityCard.nyc {
+    background: url("/static/assets/images/nyc.png") center center no-repeat;
+}
+
+.cityCard.houston {
+    background: url("/static/assets/images/houstonbg.png") center center no-repeat;
+}
+
+.cityCard.austin {
+    background: url("/static/assets/images/austin.png") center center no-repeat;
+}
+
+.cityCard.altanta {
+    background: url("/static/assets/images/atlanta.png") center center no-repeat;
+}
+
+.cityCard.charlotte {
+    background: url("/static/assets/images/charlotte.png") center center no-repeat;
+}
+
+.cityCard.chicago {
+    background: url("/static/assets/images/chicago.png") center center no-repeat;
+}
+
+.cityCard .infoRow {
+    background: rgba(73, 69, 79, 0.7);
+    box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.12);
+    border-radius: 0px 0px 8px 8px;
+    height: 73.39px;
+    width: 100%;
+    display: inline-block;
+    align-items: center;
+    text-align: center;
+    vertical-align: center;
+    position: absolute;
+    bottom: 0;
+    transition: 550ms;
+    overflow: hidden;
+}
+
+.cityCard:hover .infoRow {
+    line-height: 355px;
+    vertical-align: middle;
+    height: 100%;
+    border-radius: 8px;
+    opacity: 0;
+    animation: fadeIn 350ms linear forwards;
+    transition: 550ms;
+}
+
+.cityCard:hover .infoRow .c {
+    position: absolute;
+    top: 157px;
+    width: 100%;
+    text-align: center;
+    opacity: 0;
+    animation: fadeIn 650ms linear forwards;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+.cityCard .infoRow .counts {
+    text-align: center;
+    width: 100%;
+    color: #cc952d;
+    font-family: 'Eina 03';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 22px;
+}
+
+.cityCard .infoRow .city {
+    font-family: 'Playfair Display';
+    font-style: normal;
+    font-weight: bold;
+    font-size: 30px;
+    line-height: 40px;
+    text-align: center;
+    color: #fff;
+}
+
+/** footer **/
+footer.dark {
+    background: #282828;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.25);
+    width: 100%;
+    color: #fff;
+    padding-top: 90px;
+    padding-bottom: 90px;
+}
+
+footer.dark .footer-heading {
+    color: #CC952D;
+}
+
+footer.dark a,
+footer.dark a i {
+    color: #fff;
+}
+
+footer.dark .social a:hover,
+footer.dark .social li:hover a,
+footer.dark .social li:hover i {
+    color: #CC952D;
+}
+
+footer.dark .white-bg {
+    background: #FFFFFF;
+    border-radius: 8px;
+}
+
+footer.dark .white-bg h1 {
+    color: #49454F;
+    font-family: 'Playfair Display';
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 24px;
+    padding-top: 22px;
+}
+
+footer.dark .addon input {
+    border-radius: 8px;
+    width: 100%;
+    height: 36px;
+    padding-left: 10px;
+    padding-right: 50px;
+}
+
+footer.dark .addon i,
+.c5 i {
+    width: 44px;
+    height: 36px;
+    background: #4476DF url(/static/assets/Icons/emailPaper.svg) center center no-repeat;
+    border-radius: 0px 8px 8px 0px;
+    color: #fff;
+    position: absolute;
+    right: 13px;
+    top: 0;
+    display: inline-block;
+    text-align: center;
+    padding-top: 9px;
+}
+
+footer.dark .white-bg i,
+.c5 i {
+    color: #4476DF;
+    width: 15px;
+    margin-right: 15px;
+    display: inline-block;
+}
+
+footer.dark .contain,
+.c5 .contain {
+    margin: 0 auto;
+    width: 200px;
+}
+
+.subscriberInp {
+    font-family: 'Eina 03';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 11px;
+    line-height: 24px;
+    color: #7F7479;
+    border: 1px solid white;
+    /* max-width: 494.25px; */
+}
+
+footer.dark .subscriberInp:hover,
+footer.dark .subscriberInp:focus {
+    outline: 0px none;
+}
+
+.accentedBG {
+    background: #FAF4EA;
+    padding-right: 15px !important;
+}
+
+.c3.cardC1 {
+    height: 303px;
+}
+
+.c3.cardC1 img {
+    object-fit: cover;
+    object-position: 0px -170px;
+}
+
+.c3.cardC1 .formContainerC1 {
+    margin-top: 53px;
+    padding-top: 25px;
+    width: 100%;
+}
+
+.c3.c3.cardC1 .formContainerC1 .searchAddon {
+    width: 600px;
+    margin: 0 auto;
+}
+
+.c3.cardC1 h1 {
+    font-family: 'Playfair Display';
+    font-style: normal;
+    font-weight: bold;
+    font-size: 34px;
+    line-height: 45px;
+    display: block;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.01em;
+    color: #49454F;
+    width: 100%;
+}
+
+.c3.c3.cardC1 p {
+    font-family: 'Eina 03';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 26px;
+    line-height: 36px;
+    text-align: center;
+    color: #49454F;
+}
+
+.readMoreBtn {
+
+    background: #4476DF;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.25);
+    border-radius: 15px;
+    width: 116px;
+    height: 38px;
+    font-family: 'Eina 03';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 28px;
+    align-items: center;
+    text-align: center;
+    color: #49454F;
+    border: 0px none;
+    position: absolute;
+    right: 60px;
+    top: 15px;
+    color: #FFFFFF;
+
+}
+
+.FAQ {
+    position: absolute;
+    /* left: 600px; */
+    left: calc(50% - 50px);
+}
+
+.c4:after {
+    content: '';
+    background: url('/static/assets/images/o3dots.png') center center no-repeat;
+    position: absolute;
+    left: 0;
+    width: 60px;
+    height: 190px;
+    top: 30px;
+    display: block;
+}
+
+.c4 {
+    min-height: 741px;
+    height: auto;
+}
+
+i.icon.email:before {
+    content: '';
+    background: url(/static/assets/Icons/EmailVector.png) center center no-repeat;
+    width: 22px;
+    height: 22px;
+    display: block;
+    position: relative;
+    top: 7px;
+}
+
+i.icon.icon-mobile:before {
+    content: '';
+    display: block;
+    width: 22px;
+    height: 22px;
+    background: url(/static/assets/Icons/phone.svg) center center no-repeat;
+    background-size: 16px;
+    top: 5px;
+    position: relative;
+}
+
+.c4 .heading {
+    font-family: 'Playfair Display';
+    font-style: normal;
+    font-weight: bold;
+    font-size: 40px;
+    line-height: 53px;
+    display: flex;
+    align-items: center;
+    text-align: right;
+    color: #49454F;
+    height: 63px;
+    margin-bottom: 54px;
+}
+
+.faqHeading {
+    font-weight: 500;
+    color: #4476df;
+}
+
+.FaqCard {
+    position: relative;
+    background: #FFFFFF;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.25);
+    border-radius: 15px;
+    padding: 30px;
+    overflow: hidden;
+    transition: all 1s ease 0s;
+    cursor: pointer;
+    font-size: 17px;
+    /* min-height: 95px; */
+    /* max-height: 95px; */
+    font-family: 'Eina 03';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    align-items: center;
+    color: #49454F;
+    margin: 10px 15px;
+}
+
+.faqIcon {
+    position: absolute;
+    top: 40px;
+    right: 32px;
+    width: 14px;
+    height: 14px;
+    color: #4476df;
+}
+
+.faqQ {
+    margin: 0px;
+    letter-spacing: normal;
+    max-width: 90%;
+    height: 25px;
+    line-height: 25px;
+    display: flex;
+    font-weight: 600;
+    font-size: 18px;
+    align-items: center;
+    font-family: 'Eina 03';
+    font-style: normal;
+}
+
+.faqA {
+    margin: 0px;
+    letter-spacing: normal;
+    color: rgb(114, 119, 130);
+}
+
+.faqToggle {
+    display: none;
+}
+
+.c5 .popCard {
+    background: #FAF4EA;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+    max-width: 694px;
+    min-height: 242px;
+    padding-top: 17px;
+    padding-left: 50px;
+    padding-right: 80px;
+    padding-bottom: 30px;
+    margin: 0 auto;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+.c5 h1 {
+    font-family: 'Playfair Display';
+    font-style: normal;
+    font-weight: bold;
+    font-size: 22px;
+    line-height: 24px;
+    /* identical to box height, or 109% */
+    display: flex;
+    align-items: center;
+    color: #49454F;
+}
+
+.c5 p {
+    font-family: 'Eina 03';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 24px;
+    /* or 133% */
+    display: flex;
+    align-items: center;
+    color: #49454F;
+}
+
+.c5 small {
+    font-family: 'Eina 03';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 24px;
+    /* or 200% */
+    display: flex;
+    align-items: center;
+    color: #C4C4C4;
+}
+
+.c5 .addon {
+    position: relative;
+}
+
+.c5 .addon i {
+    width: 55px;
+    right: -25px;
+}
+
+.c5 input {
+    font-family: 'Eina 03';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 24px;
+    /* or 133% */
+    display: flex;
+    align-items: center;
+    color: #49454F;
+    background: #FFFFFF;
+    box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.25);
+    /* max-width: 494.25px; */
+    width:100%;
+    height: 36px;
+    border: 0px none;
+    padding-left: 15px;
+    padding-right: 65px;
+    position: relative;
+}
+
+.c5 b {
+    margin-bottom: 30px;
+    display: block;
+    font-family: 'Eina 03';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 21px;
+    line-height: 29px;
+    /* identical to box height */
+    align-items: center;
+    color: #49454F;
+    text-align: center;
+    width: 100%;
+}
+
+.footerInfo img {
+    padding-bottom: 30px;
+}
+
+.footerInfo p {
+    padding-bottom: 25px;
+}
+
+footer.dark .addon {
+    padding-bottom: 42px;
+}
+
+.footerInfo p,
+footer.dark li,
+footer.dark a {
+    font-family: 'Eina 03';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 24px;
+    color: #FFFFFF;
+}
+
+footer.dark .social .icon {
+    background: url('/static/assets/Icons/FooterFacebook.png') center center no-repeat;
+    background-size: 22px;
+    width: 22px;
+    height: 22px;
+    display: block;
+    cursor: pointer;
+
+}
+
+footer.dark .social li {
+    margin-right: 38px;
+}
+
+footer.dark .social li:last-child {
+    margin-right: 0px;
+}
+
+footer.dark .social .icon:hover {
+    background: url('/static/assets/Icons/FooterFacebookActive.png') center center no-repeat;
+}
+
+.icon.fb {
+    background: url('/static/assets/Icons/FooterFacebook.png') center center no-repeat !important;
+}
+
+.icon.fb:hover {
+    background: url('/static/assets/Icons/FooterFacebookActive.png') center center no-repeat !important;
+}
+
+.icon.instagram {
+    background: url('/static/assets/Icons/FooterInstagram.png') center center no-repeat !important;
+}
+
+.icon.instagram:hover {
+    background: url('/static/assets/Icons/FooterInstagramActive.png') center center no-repeat !important;
+}
+
+.icon.youtube {
+    background: url('/static/assets/Icons/FooterYoutube.png') center center no-repeat !important;
+}
+
+.icon.youtube:hover {
+    background: url('/static/assets/Icons/FooterYoutubeActive.png') center center no-repeat !important;
+}
+
+.icon.twitter {
+    background: url('/static/assets/Icons/FooterTwitter.png') center center no-repeat !important;
+}
+
+.icon.twitter:hover {
+    background: url('/static/assets/Icons/FooterTwitterActive.png') center center no-repeat !important;
+}
+
+.mob-nav-overly {
+    display: none;
+}
+
+.desk {
+    display: block !important;
+}
+
+.mob {
+    display: none !important;
+}
+
+.mobileLink {
+    display: none !important;
+}
+
+.rentNumbering {
+    display: none;
+}
+
+/* for mobile */
+@media (max-width: 575.98px) {
+    .mob {
+        display: block !important;
+    }
+
+    .desk {
+        display: none !important;
+    }
+
+    .desk-nav-overly {
+        display: none;
+    }
+
+    .mob-nav-overly {
+        display: block;
+        position: relative;
+    }
+
+    .NavOverLay {
+        padding: 0;
+        margin: 0;
+        padding: 28px;
+        height: 89px;
+        width: 100%;
+        background: #FAF4EA;
+        border-radius: 0px;
+        position: relative;
+    }
+
+    .logoImage {
+        width: 173px !important;
+    }
+
+    .navIntroContainer {
+        padding-top: 13px;
+    }
+
+
+    /* .subLogoCon {
+        width: 165.16px;
+        height: 111.18px;
+    } */
+    .subLogoCon .logoSubImage {
+        width: 110px;
+        height: 100px;
+        padding-top: 10px;
+        padding-left: 5px;
+    }
+
+    .navIntro * {
+        /* font-size: 25px !important; */
+        /* line-height: 33px !important; */
+        margin-left: 31px;
+    }
+
+    .navIntro .mainHeading {
+        font-size: 25px;
+        line-height: 33px;
+        font-family: Playfair Display;
+        font-style: normal;
+        font-weight: normal;
+        text-align: center;
+    }
+
+    .navIntro .subHeading {
+        font-family: Eina 03;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 11px;
+        line-height: 15px;
+        text-align: center;
+        color: #49454F;
+    }
+
+    .navIntro .subHeadingBold {
+        font-weight: bold;
+        margin-left: 1px;
+    }
+
+    .mob-nav-overly .mobNavFormHead {
+
+        font-family: Eina 03 !important;
+        font-style: normal !important;
+        font-weight: 600 !important;
+        font-size: 12px !important;
+        line-height: 17px !important;
+        width: 269px !important;
+        height: 22px !important;
+        margin-bottom: 5px !important;
+    }
+
+    .mob-nav-overly .mobSearchInp {
+
+        margin-top: 0px;
+        /* width: 301px !important; */
+        font-family: Playfair Display;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 12px;
+        line-height: 16px;
+        height: 31px;
+        /* identical to box height */
+
+        letter-spacing: 0.01em;
+
+        color: #7F7479;
+
+        padding-left: 37px;
+    }
+
+    .mob-nav-overly .mobSearchIcon {
+        display: block;
+        margin: 0 auto;
+        width: 16px;
+        height: 16px;
+        background-size: 16px 16px;
+        position: absolute;
+        left: 11px;
+        top: 9px;
+    }
+
+    .mob-nav-overly .searchAddon {
+        /* position: absolute !important; */
+        /* top: 0; */
+        left: 14px;
+        width: 290px;
+
+    }
+
+    .mobNavForm {
+        padding-top: 38px !important;
+    }
+
+    /* .mobNavForm .mobFilterContainer .filterList{
+        width: 225px !important;
+        height: 31px;
+    } */
+
+    .mobNavForm .filterContainer .filterList:first-child {
+        display: inline-block;
+        height: 31px !important;
+        width: 215px !important;
+        background: #FFFFFF;
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.25);
+        border-radius: 10px;
+        margin-left: 0px;
+        padding-left: 10px;
+        padding-top: 8px;
+        padding-right: 10px;
+        margin-right: 2px;
+    }
+
+    .filterContainer .filterList:not(:first-child) {
+        width: 50px;
+        position: relative;
+        top: 7px;
+    }
+
+
+    .formBody .filterList ul {
+        list-style: none;
+        display: inline-block;
+
+    }
+
+    .filterContainer .filterList li {
+        display: inline-block;
+        font-family: "Eina 03";
+        font-style: normal;
+        font-weight: 600;
+        font-size: 12px;
+        line-height: 21px;
+        text-align: center;
+        color: #49454F;
+        height: 22px;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    .mobNavForm .formBody .filterContainer .filterList {
+        height: 31px;
+        width: 31px;
+        padding-top: 2px;
+    }
+
+
+    .mobNavForm .filterContainer .filterList:not(:first-child) {
+        width: 31px;
+        position: relative;
+        top: 4px;
+        margin: 0px;
+
+    }
+    .filterList.customTooltip li{
+        width: 22px;
+        margin: 0px;
+        padding: 0px;
+        left: -5px;
+        position: relative;
+        top: 2px;
+    }
+    .mobNavForm li .icon {
+        height: 22px;
+        width: 22px;
+        background-size: 19px 20px;
+        display: block;
+        width: 20px;
+        height: 20px;
+        padding-left: 0px;
+        margin-left: 0px;
+        margin-top: 0px;
+        position: relative;
+        top: 1px;
+        left: 0px;
+    }
+
+    .mobNavForm .icon.washer {
+
+        height: 20px;
+        width: 20px;
+        background-size: 20px 20px;
+        display: block;
+        width: 20px;
+        height: 20px;
+        padding-left: -5px;
+        /* margin-left: -5px; */
+    }
+
+    .mobNavForm .mobSearchBtn {
+        width: 290px !important;
+        height: 28px !important;
+        background: #4476DF;
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.25);
+        border-radius: 5px;
+        font-family: "Eina 03";
+        font-style: normal;
+        text-align: center;
+        color: #FFFFFF;
+        border: 0px none;
+        font-weight: 600;
+        font-size: 20px;
+        line-height: 28px;
+    }
+
+    .navContainer {
+        
+        /* height: 440px !important; */
+        /* padding-top: 20px !important; */
+    }
+
+    .mobCard {
+        width: 365px !important;
+        height: 1030px !important;
+        position: relative;
+    }
+
+    .cardC .mobSmallHeading {
+        display: block;
+        width: 100%;
+        margin: auto;
+        /* left: 54px; */
+        text-align: center;
+    }
+
+    .cardC .mobSmallHeading:after {
+        content: '';
+        position: absolute;
+        /* width: 9%; */
+        width: 122.18px;
+        height: 3px;
+        display: block;
+        border-bottom: 3px solid #4476DF;
+        /* bottom: -6px; */
+        left: calc(50% - 65px);
+    }
+
+    .c1.container-fluid,
+    .c2.cardC {
+        padding-left: 0px;
+        text-align: center !important;
+        padding-top: 20px;
+    }
+
+    .container-fluid {
+        padding-right: 0px;
+    }
+
+    .cardC h1.mobHeading {
+        margin-top: 20px;
+        font-family: Playfair Display;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 30px;
+        line-height: 40px;
+        display: block;
+        align-items: center;
+        text-align: center;
+        color: #49454F;
+        width: 100%;
+        margin-left: 21px !important;
+    }
+
+
+    .cardC .mobBlueCard {
+        width: 328px;
+        height: 806px;
+        background: #FFFFFF;
+        box-shadow: none;
+        border-radius: 5px;
+        border-bottom: none;
+        padding-top: 20px;
+        padding-left: 15px;
+        padding-right: 15px;
+        margin-top: 64px;
+        margin-left: 18px;
+        position: relative;
+        text-align: center !important;
+        padding-bottom: 10px;
+        margin-bottom: 10px;
+    }
+
+    .c1.container-fluid,
+    .c2.cardC {
+        /* height: 1030px; */
+    }
+
+
+    .cardC .mobBlueCard h1 {
+        width: 300px;
+        height: 59px;
+        left: 32px;
+        top: 228px;
+
+        font-family: Playfair Display;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 25px;
+        line-height: 33px;
+        display: flex;
+        align-items: center;
+        text-align: center;
+        text-indent: 1px;
+        margin: auto !important;
+
+        color: #49454F;
+    }
+
+    .cardC .mobBlueCard li:before {
+
+        display: none;
+
+    }
+
+    .cardC .mobBlueCard .rentNumbering {
+        /* width: 27px;      */
+        display: block;
+        font-family: Effra;
+        font-size: 30px;
+        line-height: 48px;
+        font-weight: bold;
+        /* or 160% */
+
+        /* display: flex;
+        align-items: center;
+        text-align: center; */
+
+        color: #4476DF;
+
+    }
+
+    .c1.container-fluid:after {
+        display: none;
+    }
+
+    .mobBlueCard li {
+        margin: 10px 0px;
+    }
+
+    .mobBlueCard li .liHeading {
+        width: 299px;
+        height: 30px;
+        left: calc(50% - 299px/2);
+        top: 362px;
+        /* margin-left: 18px; */
+        font-family: Eina 03;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 18px;
+        /* line-height: 48px; */
+        /* or 267% */
+        display: flex;
+        align-items: center;
+        text-align: center;
+        color: #49454F;
+    }
+
+    .liHeading {
+        margin-left: 0px;
+    }
+
+    .mobBlueCard li p {
+        width: 300px;
+        height: 68px;
+        left: 33px;
+        top: 399px;
+
+        font-family: Eina 03;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 15px;
+        line-height: 25px;
+        margin: 40px 0px;
+        /* or 167% */
+
+        text-align: center;
+
+        color: #49454F;
+    }
+
+    .blueCard .text {
+        display: block;
+    }
+
+    .cardC .mobBlueCard ul {
+        padding-top: 20px;
+    }
+
+    .mobBlueCard .liHeadingF {
+        margin-left: 20px;
+        margin-bottom: -15px;
+    }
+
+    .mobBlueCard .mobileLink {
+        display: block !important;
+        position: absolute;
+        bottom: 20px;
+        margin-top: 0px;
+        height: 31px;
+        left: 0px;
+
+        font-family: Eina 03;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 18px;
+        line-height: 48px;
+
+        text-decoration-line: underline;
+
+        color: #4476DF;
+    }
+
+    .c2.cardC:after {
+        display: none;
+    }
+
+    .deskTop {
+        display: none !important;
+    }
+
+    .mobIntroRow * {
+        width: 100%;
+        margin: 0px;
+        padding: 0px;
+    }
+
+    .mobIntroRow .smallheading {
+        width: 100%;
+        height: 36px;
+        padding-top: 0px;
+        font-family: 'Eina 03';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 26px;
+        line-height: 36px;
+        margin-bottom: 30px;
+    }
+
+    .introRow .smallheading.orange:after {
+
+        width: 122.18px;
+        top: 24px;
+        left: 120px;
+        float: none;
+
+    }
+
+    .mobIntroRow .heading {
+        width: 100%;
+        height: 57px;
+        /* left: 33px; */
+        /* top: 100px; */
+        margin-top: 10px !important;
+        float: none !important;
+        margin: 5px 32px !important;
+        font-family: Playfair Display;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 30px;
+        line-height: 40px;
+        display: flex;
+        align-items: center;
+        text-align: center;
+
+        color: #49454F;
+
+    }
+
+    .mobCardC {
+        height: 656px !important;
+    }
+
+    .c2 .mobFlatCard li {
+        padding-bottom: 20px;
+    }
+
+    .c2 .mobFlatCard li b::after {
+        display: none !important;
+    }
+
+    .c2 .mobFlatCard li b {
+        font-family: Eina 03 !important;
+        width: 301px;
+        height: 30px;
+        top: 202px;
+        float: none;
+        padding: 0px !important;
+        margin: 10px 0 !important;
+        margin-left: 30px !important;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 18px;
+        line-height: 48px;
+        color: #49454F;
+
+    }
+
+    .c2 .mobFlatCard li p {
+        width: 299px;
+        height: 68px;
+        /* left: 33px;
+        top: 232px; */
+
+        font-family: Eina 03;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 15px;
+        line-height: 25px;
+        /* or 167% */
+
+        align-items: center;
+        text-align: center;
+        margin-left: 30px;
+        color: #49454F;
+    }
+
+    .c2 .mobFlatCard ul {
+        margin-bottom: 0px;
+    }
+
+    .c2 .mobFlatCard .mobLink {
+        width: 301px;
+        height: 31px;
+        margin-left: 33px;
+        padding-top: 0px;
+
+        font-family: Eina 03 !important;
+        font-style: normal !important;
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 48px;
+        align-items: center;
+        text-align: center;
+        text-decoration-line: underline;
+        color: #4476DF;
+        margin-top: -20px !important;
+    }
+
+    .mobWaitingCon {
+        height: 203px !important;
+        /* formContainerC1 */
+    }
+
+    .c3.cardC1 .formContainerC1 {
+        margin-top: 20px;
+        height: 203px !important;
+    }
+
+    .c3.cardC1 .mainHeading {
+        width: 100%;
+        height: 57px;
+        margin-left: 32px;
+
+        font-family: Playfair Display;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 25px !important;
+        line-height: 33px;
+        display: flex;
+        align-items: center;
+        text-align: center;
+
+        color: #49454F;
+    }
+
+    .c3.c3.cardC1 p {
+        width: 301px;
+        height: 30px;
+        margin-left: calc(50% - 301px/2);
+        top: 80px;
+        font-family: Eina 03;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 15px;
+        line-height: 48px;
+        margin-top: -15px;
+        align-items: center;
+        text-align: center;
+        color: #49454F;
+    }
+
+    .mobSearchInp {
+        width: 301px;
+        height: 37px;
+        top: 122px;
+
+        background: #FFFFFF;
+        border: none;
+        padding-left: 39.15px;
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.25);
+        border-radius: 7px;
+        font-size: 12px;
+        line-height: 16px;
+        letter-spacing: 0.01em;
+
+    }
+
+    .c3.c3.cardC1 .formContainerC1 .searchAddon {
+        width: 301px;
+        margin-top: 25px;
+    }
+
+    .mobFormCon .icon.search {
+        background: url('/static/assets/Icons/Path 1091.svg') center center no-repeat;
+        display: block;
+        margin: 0 auto;
+        width: 15.12px;
+        height: 16px;
+        background-size: 15.2px 18px;
+        position: absolute;
+        /* left: 45px; */
+        top: 11px;
+    }
+
+    .cardC.resPadding.cityCardPad:after {
+        display: none;
+    }
+
+    .mobGuideCon .mobSmallHeading {
+        position: absolute;
+        width: 100%;
+        height: 30px;
+        left: 0px;
+        top: 20px;
+        font-family: 'Eina 03';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 22px;
+        line-height: 30px;
+        margin-top: 20px !important;
+        align-items: center;
+        text-align: center;
+        color: #49454F;
+        margin-left: 0px;
+        padding-left: 0px;
+    }
+
+    .mobGuideCon .smallheading:after {
+        content: '';
+        position: absolute;
+        display: block;
+        border-bottom: 3px solid #4476DF;
+        bottom: -6px;
+        width: 122.18px;
+        height: 0px;
+        left: calc(50% - 50px);
+        top: 50px;
+
+    }
+
+    .cardC.resPadding.cityCardPad .headsCon {
+        margin: 0px !important;
+        padding: 0px !important;
+    }
+
+    .cardC.resPadding.cityCardPad h1.heading {
+
+        /* position: absolute; */
+        width: 100%;
+        height: 57px;
+        left: 32px;
+        top: 100px;
+
+        font-family: Playfair Display;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 30px;
+        line-height: 40px;
+        display: block;
+        align-items: center;
+        text-align: center;
+
+        color: #49454F;
+
+    }
+
+    .cityCardContainer {
+        /* border: 1px solid black; */
+        margin: 0px !important;
+    }
+
+    .cityCardContainer .cityCard {
+        width: 140px;
+        height: 175.42px;
+        margin-right: 12px;
+        margin-bottom: 21px;
+        background-size: 140px 175.42px;
+    }
+
+    .cityCardContainer .cityCard .infoRow .city {
+        font-family: Playfair Display;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 15px;
+        line-height: 40px;
+        margin-top: -5px;
+    }
+
+    .cityCardContainer .cityCard .infoRow {
+        width: 140px;
+        height: 50px;
+        background: rgba(73, 69, 79, 0.7);
+        box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.12);
+        border-radius: 0px 0px 8px 8px;
+    }
+
+    .cityCardContainer .cityCard .infoRow .counts {
+        font-size: 10px;
+        line-height: 4px;
+    }
+
+    .cityCardContainer .cityCard:hover .infoRow {
+        line-height: 255px;
+        vertical-align: middle;
+        height: 100%;
+        border-radius: 8px;
+        opacity: 0;
+        animation: fadeIn 350ms linear forwards;
+        transition: 550ms;
+    }
+
+    .cityCardContainer .cityCard:hover .infoRow .c {
+        position: absolute;
+        top: 85px;
+        width: 100%;
+        text-align: center;
+        opacity: 0;
+        animation: fadeIn 650ms linear forwards;
+    }
+
+
+    .mobReadMoreBtn {
+        width: 73px;
+        height: 23px;
+        left: 111px;
+        margin-top: -10px;
+
+        font-family: Eina 03;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 15px;
+        line-height: 21px;
+        background: #4476DF;
+        box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.25);
+        border-radius: 7px;
+    }
+
+
+    .c4:after {
+        display: none;
+    }
+
+    .c4 .smallheading.orange {
+        font-family: 'Eina 03';
+        font-weight: 600;
+        font-size: 22px;
+        line-height: 30px;
+        height: 57px;
+        margin-top: 20px;
+        margin-left: 0px !important;
+        left: 0;
+        float: unset;
+        text-align: center;
+        width: 100%;
+    }
+
+    .introRow .smallheading.orange:after {
+        width: 108px;
+        height: 0px;
+        left: calc(50% - 54px);
+        /* top: 80px;    */
+        margin-top: -5px;
+
+        border-bottom: 3px solid #CC952D;
+    }
+
+    .faqCardC h1.heading {
+
+        font-family: Playfair Display;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 30px;
+        line-height: 40px;
+        width: 301px;
+        height: 57px;
+        text-align: center !important;
+        margin-top: -5px;
+    }
+
+    .FaqCard {
+        position: relative;
+        background: #FFFFFF;
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.25);
+        border-radius: 15px;
+        padding: 15px 15px;
+        overflow: hidden;
+        transition: all 1s ease 0s;
+        cursor: pointer;
+        font-size: 17px;
+        height: 59px !important;
+
+        /* max-height: 59px !important; */
+        font-family: 'Eina 03';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 12px;
+        line-height: 17px;
+        align-items: center;
+        color: #49454F;
+        margin: 10px 15px;
+    }
+
+    .faqQ {
+        font-family: 'Eina 03';
+        font-style: normal;
+        padding-right: 10px;
+        font-weight: 600;
+        font-size: 12px;
+        line-height: 17px;
+
+        width: 237.02px;
+        height: 31.07px;
+    }
+
+    .faqIcon {
+        top: 23px;
+        margin-left: 4px;
+        right: 15px;
+    }
+
+    .faqCardC .readMoreBtn {
+        background: #4476DF;
+        box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.25);
+        border-radius: 7px;
+        width: 73px;
+        height: 23px;
+        font-family: Eina 03;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 15px;
+        line-height: 21px;
+        padding-top: -5px;
+        left: calc(50% - 43px);
+        margin-top: -10px;
+    }
+
+    .popDics {
+        margin-top: 20px;
+
+        font-family: Playfair Display !important;
+        font-style: normal;
+        font-weight: normal !important;
+        font-size: 25px;
+        line-height: 33px;
+        text-align: center;
+
+        color: #282828;
+        width: 301px;
+        height: 179px;
+        margin-left: -10px;
+    }
+
+    .c5 input {
+        width: 100%;
+        height: 36px;
+        border-radius: 8px 0px 0px 8px;
+        box-shadow: 0px 2px 2px 2px rgba(165, 165, 165, 0.5);
+        font-family: Eina 03;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 11px;
+        line-height: 24px;
+    }
+
+    .c5 .addon i {
+        width: 50.17px;
+        height: 36px;
+        /* background: #4476DF; */
+        border-radius: 0px 8px 8px 0px;
+        box-shadow: 0px 2px 2px 2px rgba(165, 165, 165, 0.5);
+    }
+
+    .c5 .addon {
+        margin-top: -50px;
+        left: 0px;
+        text-align: center;
+        align-items: center;
+        width: 90%;
+    }
+
+    .polyCons {
+        position: relative;
+        width: 100%;
+        height: 508px;
+        /* left: 0px;
+top: 4679px; */
+
+        background: #FAF4EA;
+        border-radius: 0px;
+    }
+    .polyCons .MobNavOverLays{
+        position: relative;
+        top: 0;
+        left: 0;
+    }
+    /* .polyCons .MobNavOverLays img {
+        width   : 343px;
+        height: 415.27px;
+    } */
+    footer{
+        display:none;
+    }
+}
+.polyCons small{
+    font-family: 'Eina 03';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 8px;
+    line-height: 11px;
+    display: block;
+    align-items: center;
+    text-align: center;
+    color: #282828;
+    width:100%;
+}

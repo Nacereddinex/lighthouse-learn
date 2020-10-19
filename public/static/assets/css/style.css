@@ -1,0 +1,145 @@
+@import '/static/assets/css/SofiaPro.css';
+@import '/static/assets/css/Mackinac.css';
+
+.bgSlices {
+  overflow: hidden;
+  width: 320px;
+  margin: 0 auto;
+}
+.bgSlices:before {
+  content: '';
+  background: url('/static/assets/images/greenslice1.svg') no-repeat center
+    center;
+  position: absolute;
+  background-size: 200px 250px;
+  top: 5%;
+  left: 15%;
+  width: 300px;
+  height: 100%;
+  filter: brightness(0.01);
+  z-index: 0;
+}
+.bgSlices:after {
+  content: '';
+  background: url('/static/assets/images/greenslice2.svg') no-repeat center
+    center;
+  position: absolute;
+  background-size: 200px 250px;
+  top: 1%;
+  right: 15%;
+  width: 300px;
+  height: 100%;
+  filter: brightness(0.01);
+  z-index: 0;
+}
+.text-shadow-orange {
+  text-shadow: 1px 0px 5px #ffd1b670;
+}
+.c3ul li:before {
+  content: '';
+  padding: 6px;
+  border-radius: 50%;
+  display: inline-block;
+  width: 12px;
+  background: #a5c3ce;
+  margin-right: 12px;
+}
+.testimonialcard {
+  height: 160px;
+}
+.placcent {
+  padding-left: 100px;
+  padding-right: 100px;
+}
+@media only screen and (max-width: 1076px) {
+  .c1buttons button,
+  .c1buttons svg,
+  .c1buttons line,
+  .c1buttons path {
+    text-shadow: 1px 1px 0px #000;
+  }
+}
+@media only screen and (max-width: 900px) {
+  .placcent {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .c1imgs {
+    margin: 0 auto;
+  }
+  .c3ul {
+    margin-left: auto;
+    margin-right: auto;
+    width: 220px;
+  }
+  .c1buttons button {
+    margin: 0 auto;
+    margin-top: 10px;
+  }
+  .c3buttons,
+  .c3buttons button {
+    margin-left: auto;
+    margin-right: auto;
+    width: calc(90% - 20px);
+  }
+  .p10 {
+    padding-left: 10px;
+  }
+  .learnBlockButtons button {
+    width: 300px !important;
+  }
+  .bgSlices::before {
+    left: 10%;
+  }
+  .bgSlices::after {
+    right: 10%;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .bgSlices::before {
+    left: 5%;
+  }
+  .bgSlices::after {
+    right: 5%;
+  }
+  .heroContainer {
+    min-height: 910px !important;
+  }
+}
+@media only screen and (max-width: 500px) {
+  .bgSlices::before {
+    left: 50px;
+    background-size: 150px 200px;
+    width: 200px;
+  }
+  .bgSlices::after {
+    right: 10px;
+    background-size: 150px 200px;
+    width: 200px;
+  }
+  .heroContainer {
+    min-height: 910px !important;
+  }
+}
+@media only screen and (max-width: 400px) {
+  .bgSlices::before {
+    left: 50px;
+    background-size: 130px 170px;
+    width: 100px;
+  }
+  .bgSlices::after {
+    right: 35px;
+    background-size: 130px 170px;
+    width: 100px;
+  }
+  .placcent {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .placcent.full {
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+}

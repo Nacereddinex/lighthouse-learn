@@ -1,0 +1,2154 @@
+:root {
+  --card-width: 280px;
+  --card-height: 400px;
+}
+.captureContainer {
+  font-family: Roboto;
+}
+.canMapInfoCard{
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    z-index: 1;
+    background: #fff;
+    border-radius: 50%;
+    width: 16px;
+    height: 16px;
+    line-height: 16px;
+    display: block;
+    box-shadow: 0px 0px 10px #555;
+    color: #555;
+    font-size: 8px;
+    cursor: pointer;
+    font-family: 'EINA 03';
+    padding-left: 5px;
+}
+.savePrice.btn{
+  width: 64px;
+  height: 34px;
+  border-radius: 8px;
+  background: #030D4F;
+  color: #fff;
+  font-family: 'EINA 03';
+  line-height: 0px;
+  text-align: center;
+  display: block;
+  margin: 0 auto;
+}
+.captureCard {
+  background: #FFFFFF;
+  box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  height: 100%;
+  width: calc(95% - 0px);
+  float: left;
+  padding-bottom: 20px;
+  margin-left: 2%;
+  display: block;
+}
+.captureCard p {
+  color: #282828;
+  font-size: 15px;
+}
+.captureCard h2 {
+  color: #282828;
+  font-size: 20px;
+}
+.captureCard h1 {
+  color: #4476DF;
+  font-size: 24px;
+}
+
+.CardList img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+  height: 150px;
+}
+.CardList a, .CardList a:visited, .CardList a:focus, .CardList a:active {
+  color: unset;
+  text-decoration: none;
+}
+
+.input-effect input:focus {
+  outline: none;
+}
+
+.input-effect {
+  float: left;
+  margin: 40px 3%;
+  position: relative;
+  z-index: 1;
+}
+
+.input-effect input {
+  font: 15px/24px "Lato", Arial, sans-serif;
+  color: #333;
+  width: 100%;
+  box-sizing: border-box;
+  letter-spacing: 1px;
+}
+
+.effect-16, .effect-17, .effect-18 {
+  border: 0;
+  padding: 4px 0;
+  border-bottom: 1px solid #ccc;
+  background-color: transparent;
+}
+
+.effect-16 ~ .focus-border {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background-color: #3399FF;
+  transition: 0.4s;
+}
+.input-effect.has-error .focus-border{
+  background-color: #a80505b6 !important;
+}
+.effect-16:focus ~ .focus-border {
+  width: 100%;
+  transition: 0.4s;
+}
+
+.has-content.effect-16 ~ .focus-border {
+  width: 100%;
+  transition: 0.4s;
+}
+
+.effect-16 ~ label {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  top: 9px;
+  color: #aaa;
+  transition: 0.3s;
+  z-index: -1;
+  letter-spacing: 0.5px;
+}
+.effect-16:focus ~ label {
+  top: -16px;
+  font-size: 12px;
+  color: #333;
+  transition: 0.3s;
+}
+
+.has-content.effect-16 ~ label {
+  top: -16px;
+  font-size: 12px;
+  color: #030d4f;
+  transition: 0.3s;
+}
+
+
+.google-places-autocomplete__suggestions-container{
+  position: absolute;
+  background: #fff;
+  z-index: 900;
+  width: 100%;
+  padding: 10px;
+  border-radius: 5px;
+}
+.pricePopup{
+  position: absolute!important;
+  z-index: 999;
+  top: 54px;
+  left: 210px;
+  border-radius: 10px;
+}
+.nearbyDropDown{
+  z-index:999;
+  top:9px;
+}
+.mapLoader img{
+  height: auto;
+  width: 70px;
+  margin: 0 auto;
+  position: relative;
+  top: -20px;
+}
+.pricePopup .MuiGrid-container{
+  width:100%;
+  float:left;
+  position: relative;
+  /* left:10px; */
+  padding:10px;
+  margin-bottom:0px;
+}
+/** new filter bar buttons **/
+.filterRow{
+  display: inline-block;
+}
+.filter-outlineBtn:hover, .filter-outlineBtn:focus{
+  outline: 0px none;
+}
+i.nearbyIcon.active {
+  border:1px solid #000;
+}
+i.nearbyIcon.active + span{
+  font-weight: 600;
+}
+ul.bedSelect {
+  background: #fff;
+  border: 1px solid #c4c4c4;
+  box-sizing: border-box;
+  border-radius: 10px;
+  min-width: 250px;
+  height: 42px;
+  list-style: none;
+  z-index: 505;
+  padding-left: 25px;
+  margin-bottom: 0;
+  margin-top: 9px;
+  margin-right: 5px;
+  display:flex;
+}
+ul.bedSelect li {
+  font-family: 'Eina 03';
+  font-style: normal;
+  font-size: 18px;
+  line-height: 25px;
+  text-align: center;
+  color: #c4c4c4;
+  margin-top: 7px;
+  cursor: pointer;
+}
+ul.bedSelect li:not(:last-child) {
+  margin-right: 22px;
+}
+ul.bedSelect li.active,
+ul.bedSelect li:hover {
+  color: #000;
+}
+
+/**
+icon  dogs
+icon  cats
+icon  parking
+icon  fitness_center
+icon  doorman
+icon  in_unit_washer_dryer
+icon  pool
+**/
+.ico{
+  display: inline-block;
+  width: 18px;
+  height: 24px;
+  margin-right: 10px;
+}
+.ico.ico-promos{
+  background:transparent url('/static/assets/Icons/promo-icon.svg') center center no-repeat;
+  background-size: contain;
+}
+.ico.ico-pets{
+  width: 36px;
+  height: 24px;
+  background: transparent url('/static/assets/Icons/pets-icon.svg') center center no-repeat;
+  background-size: contain;
+}
+.ico.ico-ShortTerm{
+  background:transparent url('/static/assets/Icons/shotTerm-icon.svg') center center no-repeat;
+  background-size: contain;
+}
+.ico.ico-washer{
+  background:transparent url('/static/assets/Icons/washer-icon.svg') center center no-repeat;
+  background-size: contain;
+}
+.ico.ico-ac{
+  background:transparent url('/static/assets/Icons/ac-icon.svg') center center no-repeat;
+  background-size: contain;
+}
+.ico.ico-furnished{
+  background:transparent url('/static/assets/Icons/furnished-icon.svg') center center no-repeat;
+  background-size: contain;
+}
+.ico.ico-pool{
+  background:transparent url('/static/assets/Icons/pool-icon.svg') center center no-repeat;
+  background-size: contain;
+}
+.ico.ico-park{
+  background:transparent url('/static/assets/Icons/parking-icon.svg') center center no-repeat;
+  background-size: contain;
+}
+.ico.ico-gym{
+  background:transparent url('/static/assets/Icons/gym-icon.svg') center center no-repeat;
+  background-size: contain;
+}
+.icon.dogs{
+  width:9px;
+  height:9px;
+  background: url('/static/assets/Icons/dark_dog.png') center center no-repeat;
+  background-size:cover;
+  margin-right:5px;
+  display: block;
+}
+.icon.parking{
+  width:9px;
+  height:9px;
+  background: url('/static/assets/Icons/dark_park.png') center center no-repeat;
+  background-size:cover;
+  margin-right:5px;
+  display: block;
+}
+.icon.fitness_center{
+  width:9px;
+  height:9px;
+  background: url('/static/assets/Icons/dark_fitness.png') center center no-repeat;
+  background-size:cover;
+  margin-right:5px;
+  display: block;
+}
+.icon.in_unit_washer_dryer{
+  width:9px;
+  height:9px;
+  background: url('/static/assets/Icons/dark_washer.png') center center no-repeat;
+  background-size:cover;
+  margin-right:5px;
+  display: block;
+}
+.icon.pool{
+  width:9px;
+  height:9px;
+  background: url('/static/assets/Icons/dark_pool.png') center center no-repeat;
+  background-size:cover;
+  margin-right:5px;
+  display: block;
+}
+.icon.big{
+  width:40px;
+  height:40px;
+  background-size: 22px 22px;
+  margin:0px;
+}
+.pagination{
+  /* position: absolute; */
+  bottom: 0;
+  background: #FFFFFF;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.25);
+  border-radius: 10px;
+  height: 50px;
+  padding-top: 10px;
+  margin-top:25px;
+}
+.pin.icon.bar{
+  background:#CC952D url('/static/assets/Icons/nearby-bar.svg') center center no-repeat;
+  background-size:16px;
+  width:16px;
+  height:16px;
+  margin:0 auto;
+  display:block;
+}
+.pin.icon.gym{
+  background:#CC952D url('/static/assets/Icons/nearby-gym.svg') center center no-repeat;
+  background-size:16px;
+  width:16px;
+  height:16px;
+  margin:0 auto;
+  display:block;
+}
+.pin.icon.store{
+  background:#CC952D url('/static/assets/Icons/nearby-grocery.svg') center center no-repeat;
+  background-size:16px;
+  width:16px;
+  height:16px;
+  margin:0 auto;
+  display:block;
+}
+.pin.icon.food{
+  background:#CC952D url('/static/assets/Icons/nearby-food.svg') center center no-repeat;
+  background-size:16px;
+  width:16px;
+  height:16px;
+  margin:0 auto;
+  display:block;
+}
+.page-item.active .page-link {
+  z-index: 1;
+  background-color: #007bff;
+  border-color: #007bff;
+  background: rgba(204, 149, 45, 0.15);
+  border-radius: 30px;
+  color: #000;
+  border: 0px none;
+}
+.page-item{
+  border-radius: 30px;
+}
+.page-link:hover {
+  z-index: 2;
+  color: #49454F;
+  text-decoration: none;
+  background-color: #e9ecef;
+  border-color: #dee2e6;
+  background: rgba(204, 149, 45, 0.15);
+  border-radius: 30px;
+  text-align: center;
+}
+.page-link {
+  text-align: center;
+  position: relative;
+  display: block;
+  padding: .5rem .75rem;
+  margin-left: -1px;
+  line-height: 1.25;
+  color: #007bff;
+  background-color: #fff;
+  border: 0px solid #dee2e6;
+  font-family: Eina 03;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 28px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  color: #C4C4C4;
+  width: 30px;
+  height: 30px;
+  border-radius: 30px;
+}
+.filter-outlineBtn.active{
+  border:2px solid #49454F;
+  color:#49454F;
+  font-family: 'eina_03semibold';
+  transition: all 300ms;
+}
+.filter-outlineBtn:not(.iconC){
+  padding-left: 20px;
+  padding-right: 20px;
+}
+.filter-outlineBtn{
+  transition: all 300ms;
+  background: #FFFFFF;
+  border: 1px solid #C4C4C4;
+  box-sizing: border-box;
+  border-radius: 10px;
+  font-family: 'Eina 03';
+  font-style: normal;
+  font-size: 18px;
+  line-height: 25px;
+  display: block;
+  align-items: center;
+  text-align: center;
+  color: #49454F;
+  height: 40px;
+  margin-right: 5px;
+  float: left;
+  margin-top: 10px;
+}
+/** new lightbox **/
+.iframe-lightbox .content-holder{
+  width: 90%;
+  height: 101%;
+}
+.iframe-lightbox .content{
+  height: 100% !important;
+}
+#lightboxDetail{
+  max-width: 95%;
+}
+#lightboxDetail .modal-content{
+  border-radius: 8px;
+}
+/** map markers **/
+/* .pin {
+  cursor: pointer;
+  background: #fff;
+  border: 4px solid #49454f;
+  width: 59px;
+  height: 59px;
+  border-radius: 50%;
+  position: relative;
+} */
+.pin:hover:before {
+  /* left: -12px;
+  top:4px; */
+}
+button.image-gallery-icon.image-gallery-right-nav {
+  right: 0;
+}
+button.image-gallery-icon {
+  background: transparent;
+  border: 0px none;
+  position: absolute;
+  z-index: 30;
+  width: 30px;
+  height: 30px;
+  top:38%;
+}
+.pin:hover:after{
+  top:-14px;
+  left:0px;
+}
+.pin.pin-100:after{
+  content:'';
+  width: 21px;
+  height:21px;
+  border-radius: 50%;
+  box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.5);
+  border: 2px solid #FFFFFF;
+  background: #0D7735;
+  position: absolute;
+  z-index: 30;
+  top:-16px;
+}
+.pin.pin-50:after{
+  content:'';
+  position: absolute;
+  z-index:30;
+  display:inline-block;
+  width: 21px;
+  height: 21px;
+  background: #B5D7A4;
+  border: 2px solid #FFFFFF;
+  box-sizing: border-box;
+  box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.5);
+  border-radius: 50%;
+  top:-16px;
+}
+.pin.pin-50-100:after{
+  content:'';
+  position: absolute;
+  display:inline-block;
+  z-index:30;
+  width: 21px;
+  height: 21px;
+  background: #49C466;
+  border: 2px solid #FFFFFF;
+  box-sizing: border-box;
+  box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.5);
+  border-radius: 50%;
+  top:-16px;
+}
+.pin.pin-0:after{
+  content:'';
+  position: absolute;
+  display:inline-block;
+  z-index:30;
+  width: 21px;
+  height: 21px;
+  background: #ccc;
+  border: 2px solid #FFFFFF;
+  box-sizing: border-box;
+  box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.5);
+  border-radius: 50%;
+  top:-16px;
+}
+.pin.active, .pin:hover{
+  /* background:#CC952D; */
+  /* border: 2px solid #FFFFFF; */
+  box-sizing: border-box;
+  box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.25);
+  z-index:9;
+}
+button.image-gallery-icon.image-gallery-left-nav {
+  left: -5px;
+}
+.google-places-autocomplete{
+  width:75%;
+}
+.pin svg {
+  /* position: absolute;
+  left: 16px;
+  top: 7px;
+  text-align: center;
+  font-size: 30px;
+  color: #49454f;
+  fill: #49454f; */
+  width:20px;
+  color:white;
+}
+/* .pin:hover svg , .pin.active svg, .pin:hover, .pin:active{
+  fill: #cc952d;
+  z-index:21 !important;
+} */
+
+/*.pin:hover .mapInfoCard*/
+.pin:hover .google_map_infobox, .pin.active .google_map_infobox, .pin.active .mapInfoCard{
+  display: block !important;
+}
+/* .pin:before {
+  content: '';
+  width: 2.82px;
+  height: 13.74px;
+  background: #49454f;
+  position: absolute;
+  bottom: -14px;
+  left: 24px;
+  border-radius: 35%;
+} */
+/* .pin:after {
+  content: attr(data-price);
+  background: #49454f;
+  border-radius: 50px;
+  width: 49.31px;
+  height: 17.61px;
+  padding-left: 5px;
+  padding-right: 5px;
+  padding-top: 5px;
+  padding-bottom: 0px;
+  font-family: 'Eina 03';
+  font-style: normal;
+  font-size: 10px;
+  line-height: 7px;
+  display: block;
+  align-items: center;
+  text-align: center;
+  color: #fff;
+  position: absolute;
+  bottom: -6px;
+  left: 1px;
+  z-index: 20;
+  
+  background: #FFFFFF;
+  box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 8px;
+  position: absolute;
+  width: 45px;
+  height: 21px;
+  font-family: 'Eina 03';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 12px;
+  color: #000000;
+} */
+.pin:before {
+  content: attr(data-price);
+  display: block;
+  align-items: center;
+  text-align: center;
+  position: absolute;
+  bottom: -23px;
+  left: -12px;
+  z-index: -30;
+  background: #FFFFFF;
+  box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 8px;
+  position: absolute;
+  width: 45px;
+  height: 21px;
+  font-family: 'Eina 03';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 21px;
+  color: #000000;
+}
+.pin.noBefore:before{
+  content:unset;
+}
+/** new map cards **/
+.mapInfoCard {
+  height: auto;
+  width: 170px;
+  border-radius: 8px;
+  background: #fff;
+  display: inline-block;
+  overflow: hidden;
+  position: absolute;
+  top: -179px;
+  left: -73px;
+  display:none;
+}
+.mapInfoCard a, .mapInfoCard a:hover, .mapInfoCard a:focus, .mapInfoCard a:visited{
+  text-decoration: none;
+  color:unset;
+  cursor:unset;
+}
+.gm-style img{
+  width: 100%;
+  height: 104px;
+  object-fit: cover;
+}
+.mapInfoCard .bedInfo .info{
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  width: 115px;
+  overflow: hidden;
+}
+.mapInfoCard .slider {
+  position: relative;
+}
+.mapInfoCard .slider .tag {
+  border-radius: 8px 0px 9px;
+  width: 121px;
+  height: 22px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  background: rgba(3, 13, 79, 0.55);
+  /* backdrop-filter: blur(4px); */
+}
+.mapInfoCard .slider .tag span {
+  width: 78px;
+  height: 15px;
+  font-family: 'Eina 03';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 10px;
+  display: flex;
+  align-items: center;
+  letter-spacing: 0.03em;
+  color: #fff;
+  position: relative;
+  top: 4px;
+  left: 2px;
+}
+.mapInfoCard .slider .tag b.price {
+  min-width: 30px;
+  height: 15px;
+  font-family: 'Eina 03';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 10px;
+  position: relative;
+  top: 4px;
+  left: 4px;
+  display: flex;
+  align-items: center;
+  letter-spacing: 0.03em;
+  color: #fff;
+}
+.mapInfoCard .slide {
+  width: 100% !important;
+  height: 105px;
+}
+.mapInfoCard .detail {
+  height: 57px;
+  width: 170px;
+  position: relative;
+  background: #fff;
+  padding-left: 8px;
+}
+.mapInfoCard .detail span.bedInfo {
+  font-family: 'Eina 03';
+  font-style: normal;
+  font-size: 10px;
+  line-height: 16px;
+  display: flex;
+  align-items: center;
+  color: #49454f;
+}
+.mapInfoCard .detail span.bedInfo b.price {
+  font-family: 'Eina 03 semibold';
+  font-weight: normal;
+  margin-right: 2px;
+}
+.mapInfoCard .detail .intro{
+  color: #49454F;
+  font-size: 9px;
+  font-family: 'Eina 03';
+  font-style: normal;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+.mapInfoCard .controls{
+  position: absolute;
+  top: 45px;
+  width: 100%;
+  height: 30px;
+  z-index: 800;
+}
+.react-swipe-container.carousel-mini > div {
+  width: 100% !important;
+}
+.mapInfoCard .slider .prev{
+  position: absolute;
+  z-index: 801;
+  left: 10px;
+  width: 20px;
+  height: 20px;
+  color: #fff;
+  filter: drop-shadow(2px 2px 2px black);
+  font-size: 24px;
+}
+.mapInfoCard .slider .next{
+  position: absolute;
+  z-index: 801;
+  right: 10px;
+  width: 20px;
+  height: 20px;
+  color: #fff;
+  filter: drop-shadow(2px 2px 2px black);
+  font-size: 24px;
+}
+.mapInfoCard .slider .slides{
+  width:100%;
+  height: 104px !important;
+  overflow: hidden;
+}
+.mapInfoCard .detail span.heading {
+    height: 17px;
+    font-family: 'EINA 03';
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 15px;
+    display: inline-block;
+    align-items: center;
+    color: #49454f;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    width: 150px;
+    white-space: nowrap;
+    text-transform: uppercase;
+}
+.mapInfoCard .detail span.UnitInfo {
+    font-family: 'Eina 03';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 10px;
+    line-height: 16px;
+    display: inline-block;
+    align-items: center;
+    height: 13px;
+    color: #49454f;
+    white-space: nowrap;
+    width: 150px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+.mapInfoCard .detail:before {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 8px;
+  width: 170px;
+  background: #030D4F;
+  box-shadow: 0px 4px 50px rgba(0,0,0,0.05);
+  border-radius: 0px 0px 8px 8px;
+}
+
+/* .pin {
+  position: absolute;
+  cursor: pointer;
+  top: 100%;
+  left: 50%;
+  transform: translate(-50%, -100%);
+  background: url(/assets/Icons/location_candle.png) no-repeat;
+  display: block;
+  background-size: cover;
+  width: 20px;
+  height: 28px;
+}
+
+.pin:hover,.pin.active {
+  background: url(/assets/Icons/location_ocean.png) center center no-repeat !important;
+  display: block;
+  width: 20px !important;
+  height: 28px !important;
+  background-size: 20px !important;
+  z-index: 21 !important;
+}
+
+
+.pin:before {
+  content: '';
+  position: absolute;
+  background-color: #fff; 
+  width: 12px;
+  height: 12px;
+  z-index: -1;
+  top: 5px;
+  left: 5px;
+  display: block;
+} */
+
+.pin.nearby {
+  width: 30px !important;
+  height: 30px !important;
+  border-radius: 8px;
+  z-index: 19 !important;
+  transition: all 200ms;
+  border:1px solid #fff !important;
+}
+.pin.nearby:after{
+  display:none !important;
+}
+.pin.nearby:before{
+  display: none !important;
+}
+.pin.nearby:hover {
+  width: 35px !important;
+  height: 35px !important;
+  transition: all 200ms;
+  z-index: 41 !important;
+  position: absolute;
+}
+.pin.active, .pin.nearby.active{
+  z-index: 100 !important;
+}
+.pin.active .google_map_infobox{
+  z-index: 100 !important;
+}
+.pin.nearby[data-type="gym"] {
+  background: url(/static/assets/Icons/white-weightlifting.svg) center center no-repeat #4476db !important;
+}
+
+.pin.nearby[data-type="school"] {
+  background: url(/static/assets/Icons/white-student-cap.svg) center center no-repeat #4476db !important;
+}
+
+.pin.nearby[data-type="movie_theater"] {
+  background: url(/static/assets/Icons/white-theatre-masks.svg) center center no-repeat #4476db !important;
+}
+
+.pin.nearby[data-type="store"] {
+  background: url(/static/assets/Icons/white-store.svg) center center no-repeat #4476db !important;
+}
+
+/** pulse animation **/
+.pulseMarker {
+    background: rgba(0,0,0,0.0);
+    border-radius: 50%;
+    height: 14px;
+    width: 14px;
+    position: absolute;
+    left: calc(50% + 5px);
+    top: calc(50% + 25px);
+    margin: 11px 0px 0px -12px;
+    transform: rotateX(69deg);
+    z-index: -2;
+  }
+  .pulseMarker:after {
+    content: "";
+    border-radius: 50%;
+    position: absolute;
+    margin: -13px 0 0 -13px;
+    animation: pulsated 1s ease-out;
+    animation-iteration-count: infinite;
+    box-shadow: 0 0 1px 2px #CC952D;
+    animation-delay: 1.1s;
+    opacity: 0;
+    height:40px;
+    width:40px;
+  }
+  @keyframes pulsated {
+    0% {
+      transform: scale(0.1, 0.1);
+      opacity: 0;
+    }
+    50% {
+      opacity: 1;
+    }
+    100% {
+      transform: scale(1.2, 1.2);
+      opacity: 0;
+    }
+  }
+/** map card **/
+.google_map_infobox {
+  background: #fff;
+  display: block;
+  position: absolute;
+  top: -181px;
+  left: -54px;
+  z-index: 400;
+  border-radius: 5px 5px 0px 0px;
+  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
+  width: 173px;
+  height: 163px;
+}
+
+.google_map_infobox img {
+  object-fit: cover;
+  border-radius: 5px 5px 0px 0px;
+}
+
+.google_map_infobox .mapCardBody {
+  padding-left: 3px;
+  padding-top: 5px;
+}
+
+.google_map_infobox h5 {
+  margin-bottom: 3px !important;
+  font-family: 'PlayFair Bold';
+  text-transform: uppercase;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  width: 155px;
+  height: 24px;
+  white-space: nowrap;
+  font-size: 18px;
+}
+
+.google_map_infobox p {
+  padding-bottom: 0px !important;
+  margin-bottom: 5px !important;
+  font-family: 'EINA 03';
+  text-overflow: ellipsis;
+  /* width: 135px; */
+  padding-right:4px;
+  overflow: hidden;
+  height: 15px;
+  white-space: nowrap;
+}
+
+.google_map_infobox:after {
+  content: '';
+  position: absolute;
+  height: 4px;
+  width: 100%;
+  background: #CC952D;
+  border-radius: 0px 0px 5px 5px;
+  bottom: -2px;
+  left:0;
+}
+
+
+.google_map_infobox:before {
+  content: '';
+  border-width: 7.5px 7px;
+  border-style: solid;
+  border-color: #cc952d transparent transparent transparent;
+  width: 0;
+  position: absolute;
+  bottom: -17px;
+  text-align: center;
+  left: calc(50% - 14px);
+}
+
+.google_map_infobox.nearby:after{
+  background:#4476DF;
+  display: none;
+}
+.google_map_infobox.nearby:before{
+  border-color: #4476DF transparent transparent transparent;
+  display: none;
+}
+.google_map_infobox.nearby p.b{
+  font-family: 'eina_03regular';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 9px;
+  color: #49454F;
+  height: 12px;
+}
+.google_map_infobox.nearby p.p{
+        font-family: 'Eina 03';
+      font-style: normal;
+      font-weight: normal;
+      font-size: 10px;
+      line-height: 14px;
+      color: #49454F;
+      height: 14px;
+    /* overflow: visible; */
+    /* height: unset; */
+    /* white-space: pre-line; */
+    /* margin: 20px 15px auto; */
+    /* width:130px; */
+}
+.searchAgainC svg{
+  position: relative;
+  top:4px;
+}
+.appendedList ul{
+  list-style: none;
+}
+.appendedList img{
+  margin-right:10px;
+}
+.appendedList ul li{
+  display:inline-block;
+  width:100%;
+  font-family: 'eina_03regular';
+  font-weight: normal;
+  font-size:16px;
+  color: #49454F; 
+}
+.google_map_infobox.nearby{
+  left: -65px;
+  top: -30px;
+  width: 150px;
+  height: auto;
+  background: #fff;
+  border: 1px solid #49454F;
+  box-sizing: border-box;
+  text-align: center;
+  border-radius: 8px;
+  font-family: 'eina_03regular';
+  font-weight: 600;
+  font-size: 9px;
+}
+
+/** new map UI **/
+.Map_DragSearcher>div {
+  display: inline-block;
+}
+p.nearbyLine {
+  width: 459px !important;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border: 0px none;
+  background:#fff;
+  background: #FFFFFF;
+  border-radius: 8px;
+  margin:0 auto;
+  margin-top: 12px;
+  height:40px;
+  display:block;
+}
+ul.nearbyul {
+  padding-left: 0px;
+  list-style: none;
+  display: inline-flex;
+  width:100%;
+  margin:0;
+  position: relative;
+  top: 5px;
+  left: 8px;
+}
+.nearbyul li {
+  display: inline-flex;
+  cursor: pointer;
+}
+
+i.nearbyIcon {
+  width: 30px;
+  height: 30px;
+  background: #FFFFFF;
+  border: 1px solid #C4C4C4;
+  box-sizing: border-box;
+  border-radius: 5px;
+  margin-right: 6px;
+}
+.nearbyul li:hover i.nearbyIcon{
+  border: 1px solid #000;
+}
+.nearbyul li:hover span{
+  font-weight: 600;
+}
+.nearbyul li span {
+  font-family: 'eina_03regular';
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 24px;
+  display: flex;
+  align-items: center;
+  color: #49454F;
+  height: 27px;
+  margin-right:7px;
+}
+.cssCheckbox{
+  width:26px;
+  height:27px;
+  display:inline-block;
+  border-radius: 5px;
+  border:1px solid #000;
+  cursor: pointer;
+  margin-right:10px;
+}
+.Map_DragSearcher .innerDrag .inline{
+  display:  flex;
+  width:280px;
+  margin:0 auto;
+}
+.Map_DragSearcher .innerDrag .icon{
+  border-radius: 8px;
+  width: 35px;
+  height: 35px;
+  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+}
+.icon.nearby{
+  background: #fff url(/static/assets/Icons/nearby.png) center center no-repeat;
+  width:27px;
+  height:27px;
+  background-size:27px;
+  display:inline-block;
+  margin:0 auto;
+}
+.cssCheckbox.active{
+  background: #fff url('/static/assets/Icons/cssCheckbox.png') center center no-repeat;
+  background-size:27px 27px;
+}
+
+.Map_DragSearcher .innerDrag p {
+  margin-bottom: 0px;
+  margin-right: 7px;
+  font-family: 'eina_03regular';
+  font-size: 14px;
+  font-weight: bolder;
+  height: 35px;
+  line-height: 27px;
+  background: #FFFFFF;
+  border: 1px solid rgba(73, 69, 79, 0.1);
+  box-sizing: border-box;
+  box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.25), inset 0px 0px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 8px;
+  display: inline-flex;
+  padding: 3px 0px 0px 5px;
+  width: 229px;
+  color:#282828;
+}
+p.SearchAsIC:hover, .innerDrag .icon.nearby.bg:hover{
+  border: 1px solid #000000;
+}
+.Map_DragSearcher {
+  position: absolute;
+  z-index: 500;
+  top: 15px;
+  /* right: calc(50% - 127px); */
+  width:100%;
+  /* background: white; */
+  border-radius: 5px;
+  display: inline-flex;
+  
+}
+
+/** new by ui **/
+.Map_NearbySearcher {
+  position: absolute;
+  z-index: 400;
+  bottom: 66px;
+  left: 0;
+  transform: translate(70%, 50%);
+  width: 65%;
+  background: white;
+  max-width: 360px;
+  height: auto;
+  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  display: flex;
+}
+
+.Map_NearbySearcher li {
+  float: left;
+  padding: 0px 10px;
+  font-family: 'EINA 03';
+  font-size: 12px;
+  text-align: center;
+  cursor: pointer;
+}
+
+.Map_NearbySearcher li.active .icon.icon-theatre {
+  background: url(/static/assets/Icons/white-theatre-masks.svg) center center no-repeat;
+  background-size: 16px;
+}
+
+.icon.icon-theatre {
+  background: url(/static/assets/Icons/theatre-masks.svg) center center no-repeat;
+  background-size: 16px;
+}
+
+.Map_NearbySearcher li.active .icon.icon-education {
+  background: url(/static/assets/Icons/white-student-cap.svg) center center no-repeat;
+  background-size: 16px;
+}
+
+.icon.icon-education {
+  background: url(/static/assets/Icons/student-cap.svg) center center no-repeat;
+  background-size: 16px;
+}
+
+.Map_NearbySearcher li.active .icon.icon-gym {
+  background: url(/static/assets/Icons/white-weightlifting.svg) center center no-repeat;
+  background-size: 16px;
+}
+
+.icon.icon-gym {
+  background: url(/static/assets/Icons/weightlifting.svg) center center no-repeat;
+  background-size: 16px;
+}
+
+.Map_NearbySearcher li.active .icon.icon-stores {
+  background: url(/static/assets/Icons/white-store.svg) center center no-repeat;
+  background-size: 18px 16px;
+}
+
+.icon.icon-stores {
+  background: url(/static/assets/Icons/store.svg) center center no-repeat;
+  background-size: 18px 16px;
+}
+
+.icon.icon-refresh {
+  background: url(/static/assets/Icons/refresh.svg) center center no-repeat;
+  background-color: #CC952D;
+  background-size: 16px;
+}
+
+.Map_NearbySearcher li i {
+  width: 30px;
+  height: 30px;
+  display: block;
+  border: 1px solid #ccc;
+  border-radius: 50%;
+  margin: 0 auto;
+}
+
+.Map_NearbySearcher li.active i {
+  background-color: #4476DF !important;
+}
+
+.Map_NearbySearcher ul {
+  list-style: none;
+  padding: 20px;
+  margin: 0 auto;
+}
+
+/*new search bar*/
+.search-bar .input-group-text {
+  background: transparent;
+  border-right: 2px solid transparent;
+  border-left: 2px solid #EBEBEB;
+  border-bottom: 2px solid #EBEBEB;
+  border-top: 2px solid #EBEBEB;
+  border-radius: 5px;
+}
+
+.search-bar .fa.fa-map-marker {
+  color: #4476DF;
+  font-size: 20px;
+}
+
+.search-bar input.form-control.search {
+  border-left: 0px none;
+  border-color: #EBEBEB;
+  border-width: 2px;
+  border-right: 0px none;
+  color: #000;
+  font-size: 18px;
+  height: 47px;
+}
+
+.search-bar .search-btn {
+  border: 0px none;
+  background: #fff;
+  border-left: 2px none;
+  border-bottom: 2px solid #EBEBEB;
+  border-top: 2px solid #EBEBEB;
+  border-right: 2px solid #EBEBEB;
+  border-radius: 5px;
+  border-color: #EBEBEB;
+  border-width: 2px;
+  font-size: 20px;
+  font-weight: lighter;
+}
+
+/* Dan's feature list */ 
+.rangeInput {
+  border-radius: 5px;
+  border: 1px solid #ebebeb;
+  background: #FFF;
+  padding-left: 5px;
+  width: 130px;
+  height: 37px;
+}
+
+
+
+.rangeMin {
+  width: 40%;
+  padding: 15px 22px;
+  margin: 10px 5px;
+  box-sizing: border-box;
+}
+
+.rangeMax {
+  width: 40%;
+  padding: 15px 22px;
+  margin: 10px 5px;
+  box-sizing: border-box;
+}
+
+.rangeContainer {
+  text-align: center;
+  margin-top: 20px;
+  border-radius: 5px;
+  border: 1px solid #ebebeb;
+  width: 400px;
+  background: #ebebeb;
+  position: relative;
+  display: inline-block;
+  z-index: 1;
+}
+
+.rangeTitle {
+    line-height: 1.4;
+    width: 100%;
+    height: 100%;
+}
+
+.rangeTitle:after {
+  content: "▼";
+  font-size: 9px;
+  padding-left: 60%;
+  top: 0;
+  z-index: 1;
+  text-align: center;
+  height: 100%;
+  pointer-events: none;
+}
+
+.flex-list {
+    position: relative;
+    margin: 1em;
+    overflow: hidden;
+}
+.flex-list ul {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-left: -1px;
+}
+.flex-list li {
+    flex-grow: 1;
+    flex-basis: auto;
+    margin: .25em 0;
+    padding: 0 1em;
+    text-align: center;
+    border-left: 1px solid #ccc;
+    background-color: #fff;
+}
+
+/*new feature list*/
+.feature-list .dropdown-toggle::after {
+  position: absolute;
+  right: 8px;
+  top: 14px;
+  font-size: 11px;
+}
+
+.feature-list div.dropdown {
+  float: left;
+}
+
+.feature-list button.dropdown-toggle {
+  min-width: 90px;
+  text-align: left;
+  padding-left: 10px;
+  background-color: #EBEBEB;
+  color: #000;
+  font-size: 12px;
+}
+
+.unitCard a, .unitCard a:hover, .unitCard a:focus, .unitCard a:visited, .unit-cards a, .unit-cards a:hover, .unit-cards a:focus, .unit-cards a:visited {
+  color: initial;
+  text-decoration: none;
+}
+
+.fill {
+  min-height: 100%;
+  height: 100%;
+}
+
+.unitContainer .imgMap {
+  background: #FAF4EA;
+  /* background-image: url('/static/assets/images/map.png'); */
+  /* background-position: 779px -100px; */
+  /* background-size: 1168px 1168px; */
+  margin: 0px;
+  padding: 0px;
+}
+
+.unitContainer .heading {
+  font-family: 'EINA 03', serif !important;
+}
+
+.unitContainer .filters  {
+  padding-top: 5px;
+}
+
+.unitContainer .filters ul {
+  list-style: none;
+}
+
+.unitContainer .filters ul li {
+  float: left;
+}
+
+.unitContainer .filters ul li button {
+  height: 42px !important;
+  text-align: center !important;
+  color: #282828 !important;
+  border: 1px solid rgba(0, 0, 0, 0.5) !important;
+  border-radius: 5px !important;
+  background: #fff !important;
+  padding: 20px !important;
+  line-height: 0px !important;
+  font-family: 'EINA 03', serif !important;
+  margin-bottom: 15px !important;
+}
+
+.unitContainer .filters ul li button.active {
+  background: #4476DF !important;
+  color: #fff !important;
+}
+
+.unitContainer .filters ul li button:not(last-child) {
+  margin-right: 5px !important;
+}
+
+.unitCard .card-img-top {
+  height: 142px !important;
+  min-height: 142px !important;
+}
+
+.unitCard .price {
+  font-size: 18px !important;
+  font-family: 'Playfair Display', serif !important;
+  font-weight: 700 !important;
+}
+
+.unitCard .features {
+  font-size: 12.5px !important;
+  line-height: 29px !important;
+  margin-left: 10px !important;
+}
+
+.unitCard .features, .address {
+  font-family: 'EINA 03', serif !important;
+}
+
+.unitCard .location .apartment-title {
+  /* 22px */
+  font-size: 22px !important;
+  font-weight: bolder !important;
+  line-height: 1;
+  margin: 0px !important;
+  font-family: 'Playfair Display', serif !important;
+}
+
+.unitCard .location .address {
+  font-size: 13px !important;
+  font-family: 'EINA 03', serif !important;
+  margin-top: 5px !important;
+}
+
+.unitCard .highlights .head {
+  font-size: 10px !important;
+  font-weight: bolder !important;
+  line-height: 16px !important;
+  margin: 0 !important;
+  font-family: 'EINA 03 SemiBold', serif !important;
+}
+
+.unitCard .highlights .detail {
+  font-size: 11px !important;
+  font-family: 'EINA 03', serif !important;
+  margin-top: 1px !important;
+}
+
+.unitCard .priceline {
+  color: #CC952D !important;
+  font-size: 13px !important;
+}
+
+.unitCard .priceline .pricetag {
+  position: relative !important;
+  font-family: 'EINA 03 SemiBold', serif !important;
+  font-weight: bolder !important;
+  top: -4px !important;
+}
+
+.unitCard .priceline .icon {
+  background-image: url("/static/assets/Icons/circle_candle.svg") !important;
+  background-size: 19px 19px !important;
+  width: 19px !important;
+  height: 19px !important;
+  display: inline-flex !important;
+}
+
+/* :not(last-child) */
+.unitCard {
+  margin-right: 7px !important;
+  margin-bottom: 7px !important;
+}
+
+.unitCard {
+  /* max-width: var(--card-width);      */
+  /* max-height: var(--card-height); */
+  /* min-width: 200px; */
+  /* min-height: 380px; */
+  /* padding-bottom:10px; */
+  width: 240px;
+  height: 400px;
+  cursor: pointer;
+  margin: auto;
+  margin-bottom: 20px;
+}
+
+.overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: rgba(255, 255, 255, .5);
+  z-index: 9;
+  top: 0;
+  left: 0;
+}
+
+.unitCard .card-body {
+  /* height:auto !important; */
+  /* padding-bottom: 10px; */
+  background: transparent !important;
+}
+
+.unit-cards {
+  max-width: 100%;
+  overflow: auto;
+  /* max-height: 800px; */
+  /* overflow-y: visible; */
+  /* box-sizing: content-box; */
+  /* padding-right: 0px; */
+  /* matt adds */
+  /* background-color:#F2F0EF !important; */
+  /* min-height: 350px; */
+  /* min-width:380px; */
+  /* margin-left:-5% !important; */
+}
+
+.simplebar-placeholder {
+  width: auto !important;
+}
+
+#map {
+  position: relative;
+  overflow: hidden;
+  width: 100% !important;
+  height: 100% !important;
+  margin: 0;
+  padding: 0;
+  padding-bottom: 50px;
+}
+
+.nearbyC {
+  position: absolute;
+  height: 50px;
+  background: #fff;
+  bottom: 0;
+  left: 0;
+  z-index: 9999;
+  width: 100%;
+  border: 1px solid #ccc;
+  border-left: 0px;
+  border-right: 0px;
+  border-bottom: 0px;
+}
+
+.nearbyC .nearIconList {
+  list-style: none;
+  text-align: center;
+}
+
+.nearbyC li.iconList {
+  margin-top: 5px;
+  cursor: pointer;
+  background: #ccc;
+  height: 35px;
+  display: inline-block;
+  width: 35px;
+  border-radius: 50%;
+  position: relative;
+}
+
+.iconList:before {
+  content: '';
+  width: 20px;
+  height: 20px;
+  display: inline-block;
+  position: absolute;
+  top: 7px;
+  left: 7px;
+}
+
+.iconList:first-child {
+  margin-left: 15px;
+}
+
+.iconList.active {
+  background: #4476DF !important;
+}
+
+.iconList.active:before {
+  filter: invert(1);
+}
+
+.school.iconList:before {
+  background: url('/static/assets/Icons/map/college-15.svg') center center no-repeat;
+  background-size: 20px 20px;
+}
+
+.gym.iconList::before {
+  background: url('/static/assets/Icons/map/gym-icon.svg') center center no-repeat;
+  background-size: 20px 20px;
+}
+
+.movie_theater.iconList::before {
+  background: url('/static/assets/Icons/map/theatre-15.svg') center center no-repeat;
+  background-size: 20px 20px;
+}
+
+.shopping_mall.iconList:before {
+  background: url('/static/assets/Icons/map/shop-15.svg') center center no-repeat;
+  background-size: 20px 20px;
+}
+
+.reloadNearby {
+  margin-top: 5px;
+  cursor: pointer;
+  background: #ccc;
+  height: 35px;
+  display: inline-block;
+  width: 35px;
+  border-radius: 50%;
+  position: relative;
+}
+
+.reloadNearby:before {
+  background: url('/static/assets/Icons/map/reload.svg') center center no-repeat;
+  background-size: 20px 20px;
+  content: '';
+  width: 20px;
+  height: 20px;
+  display: inline-block;
+  position: absolute;
+  top: 7px;
+  left: 7px;
+}
+
+.expandCardContainer {
+  position: relative;
+}
+
+.expandCardContainer .expandCard {
+  position: absolute;
+  z-index: 2;
+  width: 250px;
+  height: auto;
+  top: 42px;
+  padding-bottom: 20px;
+  padding-left: 10px;
+}
+
+.expandCard .listHeading {
+  margin-left: 10px;
+  margin-top: 20px;
+  font-weight: bold;
+  font-family: 'EINA 03';
+}
+
+.expandCard ul {
+  padding: 0;
+  margin-left: 10px;
+}
+
+.expandCard ul li {
+  clear: both;
+  font-family: 'EINA 03';
+  margin-bottom: 5px;
+}
+
+.expandCard .checkBoxCont {
+  display: inline-flex;
+  position: relative;
+  padding: 0;
+  margin: 0;
+  margin-right: 0px;
+  margin-right: 5px;
+  cursor: pointer;
+}
+
+/* matt code */
+.checkBoxCont input[type=checkbox] {
+  -ms-transform: scale(2);
+  -moz-transform: scale(2);
+  -webkit-transform: scale(2);
+  -o-transform: scale(2);
+  transform: scale(2);
+  cursor: pointer;
+}
+
+.checkBoxCont input {
+  z-index: 2;
+  opacity: 0;
+}
+
+.checkBoxCont .checkIcon {
+  position: absolute;
+  width: 22px;
+  height: 22px;
+  background: url('/static/assets/Icons/check-unchecked.svg') center center no-repeat;
+  top: -5px;
+  left: -5px;
+  cursor: pointer;
+}
+
+.checkBoxCont.checked .checkIcon {
+  background: url('/static/assets/Icons/check-checked.svg') center center no-repeat;
+}
+
+.unitContainer .unitCol {
+  min-height: 500px;
+  min-width: 340px;
+}
+
+.unitContainer {
+  overflow: hidden;
+}
+
+.UnitCol {
+  max-width: 270px;
+}
+
+.thePriceList .first-price .price {
+  color: rgb(108, 162, 55);
+  font-size: 18px !important;
+}
+
+.thePriceList .first-price .features {
+  margin: 0px !important;
+}
+
+.thePriceList .other-price .features {
+  font-size: 8px !important;
+  margin: 0px !important;
+}
+
+.thePriceList .other-price .price {
+  color: rgb(108, 162, 55);
+  font-size: 11px !important;
+}
+
+.imgMapMarker {
+  width: 20px;
+  transition: all 500ms;
+}
+
+#map .card .marker-body {
+  z-index: 200;
+}
+
+#map .card img.card-img-top {
+  max-height: 50% !important;
+}
+
+.card-body.marker-body {
+  background: #ddd;
+}
+
+.card-body.marker-body:after {
+  bottom: -30px;
+  left: 50%;
+  border: solid transparent;
+  content: " ";
+  height: 0;
+  width: 0;
+  position: absolute;
+  pointer-events: none;
+  border-color: rgba(136, 183, 213, 0);
+  border-top-color: #ddd;
+  border-width: 20px;
+  margin-left: -20px;
+  z-index: -1;
+}
+
+.nearbyMarkerDiv {
+  background: white;
+  border-radius: 50%;
+  padding: 2px;
+}
+
+/** slideshow **/
+/*
+    these are just the default styles used in the Cycle2 demo pages.
+    you can use these styles or any others that you wish.
+*/
+/* set border-box so that percents can be used for width, padding, etc (personal preference) */
+.cycle-slideshow, .cycle-slideshow * {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.cycle-slideshow {
+  width: 100%;
+  min-width: 200px;
+  max-width: 500px;
+  margin: 0px;
+  padding: 0;
+  position: relative;
+  background: url(/assets/images/card-loader.gif) 50% 50% no-repeat;
+}
+
+/* slideshow images (for most of the demos, these are the actual "slides") */
+.cycle-slideshow img {
+  /*
+    some of these styles will be set by the plugin (by default) but setting them here
+    helps avoid flash-of-unstyled-content
+    */
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 0;
+  display: block;
+}
+
+/* in case script does not load */
+.cycle-slideshow img:first-child {
+  position: static;
+  z-index: 100;
+}
+
+/* pager */
+.cycle-pager {
+  text-align: center;
+  width: 100%;
+  z-index: 500;
+  position: unset;
+  top: 10px;
+  overflow: hidden;
+}
+
+.cycle-pager span {
+  font-family: arial;
+  font-size: 50px;
+  width: 16px;
+  height: 16px;
+  display: inline-block;
+  color: #ddd;
+  cursor: pointer;
+}
+
+.cycle-pager span.cycle-pager-active {
+  color: #4476DF;
+}
+
+.cycle-pager>* {
+  cursor: pointer;
+}
+
+/* caption */
+.cycle-caption {
+  position: absolute;
+  color: white;
+  bottom: 15px;
+  right: 15px;
+  z-index: 700;
+}
+
+/* overlay */
+.cycle-overlay {
+  font-family: tahoma, arial;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  z-index: 600;
+  background: black;
+  color: white;
+  padding: 15px;
+  opacity: .5;
+}
+
+/* prev / next links */
+.cycle-prev, .cycle-next {
+  position: absolute;
+  top: 0;
+  width: 30%;
+  opacity: 0;
+  filter: alpha(opacity=0);
+  z-index: 800;
+  height: 100%;
+  cursor: pointer;
+}
+
+.cycle-prev {
+  left: 0;
+  background: url(http://malsup.github.com/images/left.png) 50% 50% no-repeat;
+}
+
+.cycle-next {
+  right: 0;
+  background: url(http://malsup.github.com/images/right.png) 50% 50% no-repeat;
+}
+
+.cycle-prev:hover, .cycle-next:hover {
+  opacity: .7;
+  filter: alpha(opacity=70)
+}
+
+.disabled {
+  opacity: .5;
+  filter: alpha(opacity=50);
+}
+
+/* display paused text on top of paused slideshow */
+.cycle-paused:after {
+  content: 'Paused';
+  color: white;
+  background: black;
+  padding: 10px;
+  z-index: 500;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  border-radius: 10px;
+  opacity: .5;
+  filter: alpha(opacity=50);
+}
+
+/*
+    media queries
+    some style overrides to make things more pleasant on mobile devices
+*/
+@media only screen and (max-width: 480px), only screen and (max-device-width: 480px) {
+  .cycle-slideshow {
+    width: 200px;
+  }
+
+  .cycle-overlay {
+    padding: 4px
+  }
+
+  .cycle-caption {
+    bottom: 4px;
+    right: 4px
+  }
+}
+
+.rangeInput {
+    border-radius: 5px;
+    border: 1px solid #ebebeb;
+    background: #FFF;
+    padding-left: 5px;
+    width: 100px;
+    height: 37px;
+}
+
+
+
+.rangeMin {
+  width: 40%;
+  padding: 15px 22px;
+  margin: 10px 5px;
+  box-sizing: border-box;
+}
+
+.rangeMax {
+  width: 40%;
+  padding: 15px 22px;
+  margin: 10px 5px;
+  box-sizing: border-box;
+}
+
+.rangeContainer {
+  text-align: center;
+  margin-top: 20px;
+  border-radius: 5px;
+  border: 1px solid #ebebeb;
+  width: 400px;
+  background: #ebebeb;
+  position: relative;
+  display: inline-block;
+  z-index: 1;
+}
+
+.rangeTitle {
+    width: 100px;
+    height: 100%;
+    padding-top: 7px;
+}
+
+.rangeTitle:after {
+    content: "▼";
+    font-size: 9px;
+    padding-left: 60%;
+    top: 13px;
+    z-index: 1;
+    text-align: center;
+    height: 100%;
+    pointer-events: none;
+    position: absolute;
+    right: 20px;
+}
+
+.flex-list {
+    position: relative;
+    margin: 1em;
+    overflow: hidden;
+}
+.flex-list ul {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-left: -1px;
+}
+.flex-list li {
+    flex-grow: 1;
+    flex-basis: auto;
+    margin: .25em 0;
+    padding: 0 1em;
+    text-align: center;
+    border-left: 1px solid #ccc;
+    background-color: #fff;
+}
+
+.nearbyIcon{
+    background-size:20px;
+    width:20px;
+    height:20px;
+    margin:0 auto;
+    display:block;
+}
+.nearbyIcon.shop{
+  background:#fff url('/static/assets/Icons/grocery.png') center center no-repeat;
+}
+.nearbyIcon.more{
+  background:#fff url('/static/assets/Icons/expandNearby.png') center center no-repeat;
+}
+.nearbyIcon.gym{
+  background:#fff url('/static/assets/Icons/weight.png') center center no-repeat;
+}
+.nearbyIcon.food{
+  background:#fff url('/static/assets/Icons/restaurant.png') center center no-repeat;
+}
+/* .imgMapMarker:hover{
+    width:22px;
+    transition: all 500ms;
+} */
+/** media queries **/
+/* @media only screen and (max-width: 1199px) and (min-width:1013px) {
+
+    .unitCard, .UnitCol{
+        /* width: 225px; */
+/* height: 440px; */
+/* margin-left: 3px;
+        margin-right: 3px;
+        margin-bottom: 5px;
+    }
+} */
+/* @media only screen and (max-width: 1013px) and (min-width:996px) {
+
+    .unitCard, .UnitCol{ */
+/* width: 220px; */
+/* height: 440px; */
+/* margin-left: 3px;
+        margin-right: 3px;
+        margin-bottom: 5px;
+    } */
+/* }  */
+/*
+@media only screen and (max-width: 995px) and (min-width:985px) {
+    .unitCard{
+        width: 100%;
+    }
+    .unitCard, .UnitCol:nth-child(odd){
+        clear:both;
+    }
+    .unitCard, .UnitCol{
+        width: 220px;
+        height: 440px;
+        margin-left: 3px;
+        margin-right: 3px;
+        margin-bottom: 5px;
+    }
+}  */

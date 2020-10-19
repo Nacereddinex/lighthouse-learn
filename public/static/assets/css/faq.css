@@ -1,0 +1,20 @@
+.faqHeading{
+    font-weight: 500; color: rgb(94, 97, 249);
+}
+.FaqCard{
+    position: relative; background: rgb(255, 255, 255) none repeat scroll 0% 0%;
+    padding: 32px; overflow: hidden; transition: all 1s ease 0s; border-radius: 8px;
+    box-shadow: rgba(0, 0, 8, 0.08) 0px 4px 8px 0px; cursor: pointer; font-size: 17px;
+}
+.faqIcon{
+    position: absolute; top: 32px; right: 32px; width: 14px; height: 14px;
+}
+.faqQ{
+    margin: 0px; letter-spacing: normal; max-width: 90%;
+}
+.faqA{
+    margin: 0px; letter-spacing: normal; color: rgb(114, 119, 130); 
+}
+.faqToggle{
+    display: none;
+}
